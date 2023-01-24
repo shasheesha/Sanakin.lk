@@ -14,5 +14,5 @@
                 <input type="button" class="cus-btn secondary" id="sign-in" value="Sign in">
             </div>
         </div>
-        <div id="nav-logo"></div>
+        
 </nav>
