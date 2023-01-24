@@ -46,7 +46,7 @@
         <div class="container">
             <h2 class="section-header">Shop Our Top Categories</h2>
             <div class="horizontal-scroll ">
-                
+
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
         <div class="container">
             <h2 class="section-header">Best Deals For You!</h2>
             <div class="row">
-                <div class="card col-md-3" >
+                <div class="card col-md-3">
                     <img class="card-img-top" src="./assets/products.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Product Name</h5>
@@ -62,7 +62,7 @@
                         <input type="button" class="btn primary" value="Add to Cart">
                     </div>
                 </div>
-                <div class="card col-md-3" >
+                <div class="card col-md-3">
                     <img class="card-img-top" src="./assets/products.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Product Name</h5>
@@ -70,7 +70,7 @@
                         <input type="button" class="btn primary" value="Add to Cart">
                     </div>
                 </div>
-                <div class="card col-md-3" >
+                <div class="card col-md-3">
                     <img class="card-img-top" src="./assets/products.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Product Name</h5>
@@ -78,7 +78,7 @@
                         <input type="button" class="btn primary" value="Add to Cart">
                     </div>
                 </div>
-                <div class="card col-md-3" >
+                <div class="card col-md-3">
                     <img class="card-img-top" src="./assets/products.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Product Name</h5>
@@ -92,14 +92,70 @@
     </div>
     <div class="section shops">
         <div class="container">
-        <h2 class="section-header">Most Popular Products</h2>
-        <div class="card col-md-3" >
-            <img class="shop-profile" src="" alt="">
-            <div class="text">
-                <h5 class="shop-name">Shop Name</h5>
-                <h6><span id="product-count"></span> Products</h6>
+            <h2 class="section-header">Most Popular Products</h2>
+            <div class="row">
+                <div class="card">
+                    <div>
+                        
+                    </div>
+                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
+                    <div class="text">
+                        <h5 class="shop-name">Shop Name</h5>
+                        <h6><span id="product-count"></span> Products</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
+                    <div class="text">
+                        <h5 class="shop-name">Shop Name</h5>
+                        <h6><span id="product-count"></span> Products</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
+                    <div class="text">
+                        <h5 class="shop-name">Shop Name</h5>
+                        <h6><span id="product-count"></span> Products</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
+                    <div class="text">
+                        <h5 class="shop-name">Shop Name</h5>
+                        <h6><span id="product-count"></span> Products</h6>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="card col-md-3">
+                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
+                    <div class="text">
+                        <h5 class="shop-name">Shop Name</h5>
+                        <h6><span id="product-count"></span> Products</h6>
+                    </div>
+                </div>
+                <div class="card col-md-3">
+                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
+                    <div class="text">
+                        <h5 class="shop-name">Shop Name</h5>
+                        <h6><span id="product-count"></span> Products</h6>
+                    </div>
+                </div>
+                <div class="card col-md-3">
+                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
+                    <div class="text">
+                        <h5 class="shop-name">Shop Name</h5>
+                        <h6><span id="product-count"></span> Products</h6>
+                    </div>
+                </div>
+                <div class="card col-md-3">
+                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
+                    <div class="text">
+                        <h5 class="shop-name">Shop Name</h5>
+                        <h6><span id="product-count"></span> Products</h6>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -107,7 +163,7 @@
         <div class="container">
             <h2 class="section-header">Most Popular Products</h2>
             <div class="row">
-                <div class="card col-md-3" >
+                <div class="card col-md-3">
                     <img class="card-img-top" src="./assets/products.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Product Name</h5>
@@ -115,7 +171,7 @@
                         <input type="button" class="btn primary" value="Add to Cart">
                     </div>
                 </div>
-                <div class="card col-md-3" >
+                <div class="card col-md-3">
                     <img class="card-img-top" src="./assets/products.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Product Name</h5>
@@ -123,7 +179,7 @@
                         <input type="button" class="btn primary" value="Add to Cart">
                     </div>
                 </div>
-                <div class="card col-md-3" >
+                <div class="card col-md-3">
                     <img class="card-img-top" src="./assets/products.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Product Name</h5>
@@ -131,7 +187,7 @@
                         <input type="button" class="btn primary" value="Add to Cart">
                     </div>
                 </div>
-                <div class="card col-md-3" >
+                <div class="card col-md-3">
                     <img class="card-img-top" src="./assets/products.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Product Name</h5>

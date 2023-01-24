@@ -124,15 +124,34 @@
     padding: 0 20px;
     border-radius: 100px;
 }
-
-.shops .card{
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--orange);
-    border-radius: 100px;
+.products .card:hover {
+    transition: 0.3s;
+    background: #D9D9D9;
 }
+
 .shops .card{
     display: flex;
     flex-direction: row;
-
+    filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, 0.2));
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 10px 15px;
+    align-items: center;
+    margin: 0 12px;
+    width: 15vw;
+}
+.shops .card .shop-profile{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--orange);
+    border-radius: 100px;
+}
+.shops .card .text{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.shops .card .text .shop-name,.shops .card .text h6{
+    margin: 0px;
 }
