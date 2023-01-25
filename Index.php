@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/">
     <link rel="stylesheet" href="./css/main.css">
     <title>Sanakin.LK | Trusted Shops</title>
 </head>
@@ -59,7 +57,31 @@
         <div class="container">
             <h2 class="section-header">Shop Our Top Categories</h2>
             <div class="horizontal-scroll ">
+            <div id="category-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="display: none;">
+                <button type="button" data-bs-target="#category-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#category-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    
+                </div>
+            </div>
 
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#category-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#category-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+        </div>
             </div>
         </div>
     </div>
@@ -90,144 +112,57 @@
 
 
 
-            <div id="shopsIndicators" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+            <div id="shopsIndicators" class="carousel slide" data-interval="pause" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                            for ($p1 = 0; $p1 < 4; $p1++) {
+                                echo "<div class='col-md-3'>
+                    <div class='card'>
+                        <img class='shop-profile' src='./assets/icons/shop.svg' alt=''>
+                        <div class='text'>
+                            <h5 class='shop-name'>Shop Name</h5>
+                            <h6><span id='product-count'></span> Products</h6>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <img class='shop-profile' src='./assets/icons/shop.svg' alt=''>
+                        <div class='text'>
+                            <h5 class='shop-name'>Shop Name</h5>
+                            <h6><span id='product-count'></span> Products</h6>
+                        </div>
+                    </div>
+                </div>";
+                            }
+                            ?>
+
                         </div>
 
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="shop-profile" src="./assets/icons/shop.svg" alt="">
-                                    <div class="text">
-                                        <h5 class="shop-name">Shop Name</h5>
-                                        <h6><span id="product-count"></span> Products</h6>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                            for ($p1 = 0; $p1 < 4; $p1++) {
+                                echo "<div class='col-md-3'>
+                    <div class='card'>
+                        <img class='shop-profile' src='./assets/icons/shop.svg' alt=''>
+                        <div class='text'>
+                            <h5 class='shop-name'>Shop Name</h5>
+                            <h6><span id='product-count'></span> Products</h6>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <img class='shop-profile' src='./assets/icons/shop.svg' alt=''>
+                        <div class='text'>
+                            <h5 class='shop-name'>Shop Name</h5>
+                            <h6><span id='product-count'></span> Products</h6>
+                        </div>
+                    </div>
+                </div>";
+                            }
+                            ?>
                         </div>
                     </div>
 
@@ -269,6 +204,38 @@
             </div>
         </div>
     </div>
+
+
+    <div class="section ad-banner-1">
+        <div id="ad-banner-carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="display: none;">
+                <button type="button" data-bs-target="#ad-banner-carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#ad-banner-carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#ad-banner-carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/hero-slides/slide 1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/hero-slides/slide 2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/hero-slides/slide 1.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#ad-banner-carousel1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ad-banner-carousel1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+        </div>
+    </div>
+
     <div class="section deals">
         <div class="container">
             <h2 class="section-header">Today Best Deals For You</h2>
@@ -454,13 +421,13 @@
         </div>
     </div>
 
-    <div class="section ad-banner">
+    <div class="section ad-banner-2">
         <div class="container">
-            <div id="ad-banner-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="ad-banner-carousel2" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#ad-banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#ad-banner-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#ad-banner-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#ad-banner-carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#ad-banner-carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#ad-banner-carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -473,11 +440,11 @@
                         <img src="./assets/hero-slides/slide 1.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#ad-banner-carousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#ad-banner-carousel2" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#ad-banner-carousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#ad-banner-carousel2" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
