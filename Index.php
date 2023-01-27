@@ -53,7 +53,8 @@
             </div>
         </div>
     </div>
-    <div class="section">
+
+    <div class="section cat-sec">
         <div class="container">
             <h2 class="section-header">Shop Our Top Categories</h2>
             <div class="horizontal-scroll ">
@@ -64,7 +65,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="card">
+                    <div class="card col-2">
+                        <div class="card-content">
+                            <div class="cat-name">
+                                <h5>Category Name</h5>
+                            </div>
+
+                        </div>
                         
                     </div>
                 </div>
@@ -85,6 +92,7 @@
             </div>
         </div>
     </div>
+
     <div class="section best-deals products">
         <div class="container">
             <h2 class="section-header">Best Deals For You!</h2>
@@ -106,9 +114,10 @@
             </div>
         </div>
     </div>
+    
     <div class="section shops">
         <div class="container baoth-sides-margin-14">
-            <h2 class="section-header">Most Popular Products</h2>
+            <h2 class="section-header">Choose by Shops</h2>
 
 
 

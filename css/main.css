@@ -51,7 +51,13 @@ input:focus{
     margin: 0px;
     cursor: pointer;
 }
-#nav .nav-items li:hover{
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+    /* color: #545454; */
+  }
+#nav .nav-items li a:hover{
     color: var(--orange);
     transition: 0.3s;
 }
@@ -70,12 +76,7 @@ footer .text-small {
   footer img{
     width: 100%;
   }
-  footer a {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-    /* color: #545454; */
-  }
+
   footer .sub-sec-title{
     color: var(--orange);
   }
@@ -320,7 +321,6 @@ Footer .search-bar .search{
 .ad-banner-1 .carousel-inner{
     height: 500px;
     border: 0px solid transparent;
-    border-radius: 15px;
 }
 .cat-sec .cat-tile{
     border: 0px solid transparent;
@@ -338,10 +338,28 @@ Footer .search-bar .search{
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background: linear-gradient(90deg, rgba(255,156,0,1) 0%, rgba(254,127,23,1) 100%);
+    background: linear-gradient(90deg, rgba(255, 157, 0, 0.55) 0%, rgba(254,127,23,0.55) 100%);
     border: 0px solid transparent;
     border-radius: 0 0 15px 15px;
+}
+.cat-sec .cat-text:hover{
+    background: linear-gradient(90deg, rgba(255,156,0,1) 0%, rgba(254,127,23,1) 100%);
+    transition: 0.3s;
 }
 .cat-text h4{
     margin: 0px;
 }
+
+.cat-sec .card .card-content{
+    height: 300px;
+    background-color: #545454;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+
