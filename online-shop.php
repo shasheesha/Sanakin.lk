@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Sanakin.LK | Trusted Shops</title>
 </head>
+<?php include "./partials/home-navigation.php"; ?>
+
 <body>
 
-<div class="section hero2-sec">
+    <div class="section hero2-sec">
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -32,7 +34,8 @@
                 </div>
                 <div class="carousel-caption d-none d-md-block hero-banner-content">
                     <div class="row hero-content">
-                        <h1 class="main-title">Find the Best Products<br>with <span class="primarycolor-text">Reliability</h1>
+                        <h1 class="main-title">Shop Online</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                         <div class="search-bar">
                             <input type="search" class="search" name="Search" placeholder="Search Here Shop or Product" id="">
                             <input type="button" id="search-btn" class="search-btn btn primary" value="Search">
@@ -53,9 +56,12 @@
         </div>
     </div>
 
-<div class="section best-deals products">
+    <div class="section products">
         <div class="container">
-            <h2 class="section-header">Best Deals For You!</h2>
+            <div class="cat-panel">
+                <h2 class="section-header">Category Name</h2>
+                <div class="explore-btn" id="cat-seemore">See more <img src="./assets/icons/more-arrow.svg" alt="" sizes="w-16" srcset=""></div>
+            </div>
             <div class="row">
                 <?php
                 for ($p1 = 0; $p1 < 4; $p1++) {
@@ -74,6 +80,10 @@
             </div>
         </div>
     </div>
+
+    <?php include "./partials/home-footer.php"; ?>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

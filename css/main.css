@@ -310,8 +310,12 @@ Footer .search-bar .search{
     margin-bottom: 20px;
 }
 .center-btn{
-    color: var(--orange);
     text-align: center;
+}
+.explore-btn{
+    color: var(--orange);
+    cursor: pointer;
+    
 }
 .ad-banner-2 .carousel-inner{
     height: 400px;
@@ -361,5 +365,20 @@ Footer .search-bar .search{
     padding: 15px 10px;
     text-align: center;
 }
-
-
+.hero2-sec .carousel-inner{
+    border: 0px solid transparent;
+    border-radius: 15px;
+}
+.hero2-sec .main-title, .hero2-sec p{
+    color: var(--grey);
+}
+.products .cat-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.products .cat-panel .section-header{
+    margin: 0px;
+}
