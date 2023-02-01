@@ -65,15 +65,19 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="card col-2">
-                        <div class="card-content">
-                            <div class="cat-name">
+                    <?php 
+                    for($c1 = 0; $c1 < 6; $c1++){
+                        echo "<div class='card col-2'>
+                        <div class='card-content'>
+                            <div class='cat-name'>
                                 <h5>Category Name</h5>
                             </div>
 
                         </div>
                         
-                    </div>
+                    </div>";
+                    }
+                    ?>
                 </div>
                 <div class="carousel-item">
                     
