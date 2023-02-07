@@ -1,3 +1,10 @@
+<?php
+session_start();
+$_SESSION["newEmail"] = "asdasdas";
+echo "<script> console.log('Record updated successfully (PHP)- ".$_SESSION["newEmail"]."'); </script>";
+
+// unset($_SESSION['newEmail']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +16,9 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Sanakin.LK | Trusted Shops</title>
 </head>
-<?php include "./partials/home-navigation.php"; ?>
+<?php 
+
+include "./partials/home-navigation.php"; ?>
 
 <body>
     <div class="section hero-sec">
@@ -35,7 +44,7 @@
                     <div class="row hero-content">
                         <h1 class="main-title">Find the Best Products<br>with <span class="primarycolor-text">Reliability</h1>
                         <div class="search-bar">
-                            <input type="search" class="search" name="Search" placeholder="Search Here Shop or Product" id="">
+                            <input type="search" class="search" name="Search" placeholder="Search Here Shop or Product" id="Search">
                             <input type="button" id="search-btn" class="search-btn btn primary" value="Search">
                         </div>
 
@@ -496,6 +505,7 @@
     </div>
 
     <?php include "./partials/home-footer.php"; ?>
+    <?php include "./sign-up.php"; ?>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

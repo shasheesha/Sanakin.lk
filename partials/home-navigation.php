@@ -10,7 +10,7 @@
                 <li id="about-page"><a href="./online-shop.php">About Us</a></li>
             </ul>
             <div id="nav-sign">
-                <input type="button" class="cus-btn primary" id="sign-up" value="Sign up">
+                <input type="button" class="cus-btn primary" id="sign-up" value="Sign up" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <input type="button" class="cus-btn secondary" id="sign-in" value="Sign in">
             </div>
         </div>

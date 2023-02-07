@@ -2,94 +2,99 @@
 include("email-functions.php");
 include("code-generate.php");
 
-// if(isset($_POST['send'])) {
-//     echo "This is Button1 that is selected";
-//     // $to = $_POST['to'];
-//     // $subject = $_POST['subject'];
-//     // $body = $_POST['body'];
 
-//     $to = "shashishajanith1@gmail.com";
-//     $subject = "test";
-//     $body = "test msg";
-
-//     echo "consol.log'".$to."' '".$subject."' '".$body."'";
-//     send_email($to, $subject, $body);
-
-// }
-$genCode = generateCode();
+$genCode = generateCode($email);
 $to = "shashishajanith1@gmail.com";
 $subject = "test";
-$arrayDigits = str_split($genCode);
-$body = include("../account-verify.php");
-// "<!DOCTYPE html>
-// <html lang='en'>
+$code = $genCode;
+$arrayDigits = str_split($code);
+$body = "<!DOCTYPE html>
+<html lang='en'>
+<body style='width: 100%;'>
+  <table style='width: 100%; margin: auto;'>
+    <tr>
+      <td>
+        <table style='width: 600px;'>
+          <tr>
+            <td style='background-color: #FF9C00; height: 10px;'></td>
+          </tr>
+          <tr>
+            <td style='text-align: center; font-family: 'Manrope', sans-serif;'>
+              <table style='margin: auto;'>
+                <tr>
+                  <td style='text-align:center;'><img src='https://drive.google.com/uc?id=1PgV43MSYVk4-qN4HSjq9i3aRsJh_DvPU' style='width: 200px; margin-top: 30px;' alt='sanakin.lk'></td>
+                </tr>
+                <tr>
+                  <td style='text-align:center;font-size: 36px; font-weight: bold; color: #000000;'>Verify Your Email</td>
+                </tr>
+                <tr>
+                  <td style='text-align:center;'><img src='https://drive.google.com/uc?id=1JI8gMeILy4Tt9BeuKbN7-ZeYJCnWVisT' style='width: 165px;margin-top: 20px;' alt='verify code'></td>
+                </tr>
+                <tr style='margin-top: 30px;'>
+                  <td style='width: 512px; font-size: 16px;font-weight: 500; text-align: left;'>
+                    Thanks for registering an account with <a href='#' style='color: #FF9C00;text-decoration: none;'>Sanakin.lk!</a><br><br>
+                    Find you’r email Verification code and verify your email within 5 minutes. if failure to verify your email within the time duration you have to get a new code and try again.
+                  </td>
+                </tr>
+                <tr>
+                  <td style='text-align: center;'>
+                    <table style='display: inline-table;'>
+                      <tr style='display: flex; gap: 10px; font-size: 36px;margin-top: 30px;'>
+                        <td style='display: flex; justify-content: center; width: 55px; height: 72px; background-color: #F0F0F0; border: 0px soild transparent; border-radius: 5px; text-align: center;margin-right: 10px;'>
+                          <p style='margin: auto;'>".$arrayDigits[0]."</p>
+                        </td>
+                        <td style='display: flex; justify-content: center; width: 55px; height: 72px; background-color: #F0F0F0; border: 0px soild transparent; border-radius: 5px; text-align: center;margin-right: 10px;'>
+                          <p style='margin: auto;'>".$arrayDigits[1]."</p>
+                        </td>
+                        <td style='display: flex; justify-content: center; width: 55px; height: 72px; background-color: #F0F0F0; border: 0px soild transparent; border-radius: 5px; text-align: center;margin-right: 10px;'>
+                          <p style='margin: auto;'>".$arrayDigits[2]."</p>
+                        </td>
+                        <td style='display: flex; justify-content: center; width: 55px; height: 72px; background-color: #F0F0F0; border: 0px soild transparent; border-radius: 5px; text-align: center;margin-right: 10px;'>
+                          <p style='margin: auto;'>".$arrayDigits[3]."</p>
+                        </td>
+                        <td style='display: flex; justify-content: center; width: 55px; height: 72px; background-color: #F0F0F0; border: 0px soild transparent; border-radius: 5px; text-align: center;margin-right: 10px;'>
+                          <p style='margin: auto;'>".$arrayDigits[4]."</p>
+                        </td>
+                        <td style='display: flex; justify-content: center; width: 55px; height: 72px; background-color: #F0F0F0; border: 0px soild transparent; border-radius: 5px; text-align: center;'>
+                          <p style='margin: auto;'>".$arrayDigits[5]."</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='text-align: center;font-size: 16px; font-weight: 500;'>Verification Code</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table style='width: 512px; margin: auto;'>
+                <tr>
+                  <td style='background-color: gray; height: 1px;'></td>
+                </tr>
+                <tr>
+                  <td style='font-family: 'Manrope', sans-serif; font-size: 14px; text-align: center; color: gray;'>
+                    You have received this mandatory service announcement to update you about important changes to <a href='#' style='color: #FF9C00; text-decoration: none;'>Sanakin.lk</a> or your account.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
 
-// <head>
-//     <meta charset='UTF-8'>
-//     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-//     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-//     <link rel='preconnect' href='https://fonts.googleapis.com'>
-//     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-//     <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap' rel='stylesheet'>
-// </head>
-// <body style='width: 600px;'>
-//     <div style='width: 100%; height: 10px; background-color: #FF9C00;;'></div>
-//     <div style='width: 100%; display: flex; flex-direction: column; align-items: center;font-family: 'Manrope', sans-serif;'>
-//         <img src='../assets/sanakin-logo.png' style='width: 200px; margin-top: 30px;' alt='sanakin.lk'>
-//         <p style='font-size: 36px; font-weight: bold; color: #000000;'>Verify Your Email</p>
-//         <img src='../assets/icons/orange-shild.svg' style='width: 165px;margin-top: 20px;' alt='verify code'>
-//         <div style='width: 512px; font-size: 16px;font-weight: 500;margin-top: 30px;'>
-//             <p>Thanks for registering an account with <a href='#' style='color: #FF9C00;text-decoration: none;'>Sanakin.lk!</a><br><br>
-//                 Find you’r email Verification code and verify your email within 5 minutes. if failure to verify your email within the time duration you have to get a new code and try again.</p>
-//         </div>
-//         <div style='width: 100%; display: flex; flex-direction: row; justify-content: center; gap: 10px;font-size: 36px; margin-top: 30px; '>
-//             <div style='width: 55px; height: 72px; display:flex; justify-content:center;align-items: center; background-color: #F0F0F0;border: 0px soild transparent;border-radius: 5px;'>
-//                 <p>".$arrayDigits[0]."</p>
-//             </div>
-//             <div style='width: 55px; height: 72px; display:flex; justify-content:center;align-items: center; background-color: #F0F0F0;border: 0px soild transparent;border-radius: 5px;'>
-//                 <p>".$arrayDigits[1]."</p>
-//             </div>
-//             <div style='width: 55px; height: 72px; display:flex; justify-content:center;align-items: center; background-color: #F0F0F0;border: 0px soild transparent;border-radius: 5px;'>
-//                 <p>".$arrayDigits[2]."</p>
-//             </div>
-//             <div style='width: 55px; height: 72px; display:flex; justify-content:center;align-items: center; background-color: #F0F0F0;border: 0px soild transparent;border-radius: 5px;'>
-//                 <p>".$arrayDigits[3]."</p>
-//             </div>
-//             <div style='width: 55px; height: 72px; display:flex; justify-content:center;align-items: center; background-color: #F0F0F0;border: 0px soild transparent;border-radius: 5px;'>
-//                 <p>".$arrayDigits[4]."</p>
-//             </div>
-//             <div style='width: 55px; height: 72px; display:flex; justify-content:center;align-items: center; background-color: #F0F0F0;border: 0px soild transparent;border-radius: 5px;'>
-//                 <p>".$arrayDigits[5]."</p>
-//             </div>
-//         </div>
-//         <p style='font-size: 16px; font-weight: 500;'>Verification Code</p>
-//     </div>
-//     <div style='width: 100%;display: flex;flex-direction: column;align-items: center;'>
-//         <span style='background-color: gray;width: 512px; height: 2px;'></span>
-//         <div style='width: 512px; font-family:  'Manrope', sans-serif; font-size: 14px; text-align: center; color: gray;'>
-//             <p>You have received this mandatory service announcement to update you about important changes to <a href='#' style='color: #FF9C00; text-decoration: none;'>Sanakin.lk</a> or your account.</p>
-//         </div>
-//     </div>
-
-// </div>
-
-// </body>
-// </html>";
+";
+echo "Generated code: $code";
 send_email($to, $subject, $body);
 
 
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     $to = $_POST['to'];
-//     $subject = $_POST['subject'];
-//     $body = $_POST['body'];
 
-//     $to = "shashishajanith1@gmail.com";
-//     $subject = "test";
-//     $body = "test msg";
-
-//     echo "consol.log'" . $to . "' '" . $subject . "' '" . $body . "'";
-//     send_email($to, $subject, $body);
-// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
