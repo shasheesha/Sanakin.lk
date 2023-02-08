@@ -1,31 +1,23 @@
 <html>
   <head>
     <script>
-      function hideButtonAndShowParagraph() {
-        document.getElementById("sec1").style.display = "none";
-        document.getElementById("sec2").style.display = "block";
-      }
-      
-      function showMessage() {
-        document.getElementById("sec2").style.display = "none";
-        document.getElementById("sec3").style.display = "block";
+      function callMyFunction() {
+        var param1 = "value1";
+        var param2 = "value2";
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "test2.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+          if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            alert(this.responseText);
+          }
+        };
+        xhr.send("function=my_specific_function&param1=" + param1 + "&param2=" + param2);
       }
     </script>
   </head>
   <body>
-    <div id="sec1">
-    <button  onclick="hideButtonAndShowParagraph()"> Show Paragraph </button>
-    
-
-    </div>
-    <div  id="sec2" style="display:none">
-    <p>This is a hidden paragraph.</p>
-    <button  onclick="showMessage()"> Show Message </button>
-    
-    </div>
-    <div id="sec3" style="display:none">
-    <p>This is another hidden message.</p>
-    </div>
-    
+    <button onclick="callMyFunction()">Call my function</button>
   </body>
 </html>

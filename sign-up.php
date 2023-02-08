@@ -56,7 +56,7 @@
                         <img src="./assets/icons/email.svg" alt="">
                         <div class="feilds">
                             <p>Enter the 6 Digits code you received to<br>
-                                <span class="orange-text"><?php echo $_SESSION['newEmail']; ?></span>
+                                <!-- <span class="orange-text"><?php echo $_SESSION['newEmail']; ?></span> -->
                             </p>
                             <input type="numbers" class="t-feild" name="newVCode" id="newVCode" placeholder="6 Digits Code">
                         </div>

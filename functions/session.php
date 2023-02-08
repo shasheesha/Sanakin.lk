@@ -1,6 +1,8 @@
 <?php 
-session_start();
-$_SESSION["newEmail"] = "asdasdas";
-echo "<script> console.log('Record updated successfully (PHP)- ".$_SESSION["newEmail"]."'); </script>";
+function saving($variable){
+    $_SESSION["newEmail"] = $variable;
+    echo "<script> console.log('Record updated successfully (PHP)- ".$_SESSION["newEmail"]."'); </script>";
+    
+}
 
 ?>

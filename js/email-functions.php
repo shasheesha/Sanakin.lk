@@ -4,9 +4,9 @@ include("email-configuration.php");
 
 // https://drive.google.com/uc?id=1PgV43MSYVk4-qN4HSjq9i3aRsJh_DvPU
 // https://drive.google.com/uc?id=1JI8gMeILy4Tt9BeuKbN7-ZeYJCnWVisT
-function emailVerificationSend($toEmail){
+function emailVerificationSend(){
     $genCode = generateCode();
-    $to = $toEmail;
+    $to = $_SESSION["newEmail"];
     $subject = "Email Verification Code from Sanakin.lk";
     $code = $genCode;
     $arrayDigits = str_split($code);
@@ -92,9 +92,9 @@ function emailVerificationSend($toEmail){
 </html>
 
 ";
-    echo "consol.log(Generated code: $code)";
+    echo "Generated code: $code";
     send_email($to, $subject, $body);
     // send_email("shashishajanith1@gmail.com","testing subject" , "testing");
 }
-emailVerificationSend("shashishajanith1@gmail.com");
+
 ?>
