@@ -1,0 +1,190 @@
+:root {
+    --orange: #FF9C00;
+    --hover-orange: #ffac27;
+    --white: #ffffff;
+    --grey: #282828;
+    --tab-orange: #FFE0AF;
+}
+
+.sign-up-canvas{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    /* border: 1px solid #A2A2A2; */
+    backdrop-filter: blur(20px);
+}
+
+div.btn-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+label {
+    font-size: 13px;
+    color: var(--orange);
+    font-weight: 500;
+}
+
+.btn-color-mode-switch {
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner {
+    margin: 0px;
+    width: 356px;
+    height: 55px;
+    background: rgba(243, 243, 243, 0.6);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:before {
+    content: attr(data-on);
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    /* top: 17px; */
+    right: 37px;
+    color: var(--grey);
+
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:after {
+    content: attr(data-off);
+    width: 176px;
+    height: 45px;
+    background: #fff;
+    border-radius: 9px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    /* text-align: center; */
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-color-mode-switch input[type="checkbox"] {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner {
+    /* background: var(--white); */
+    color: var(--grey);
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:after {
+    content: attr(data-on);
+    left: 176px;
+    background: var(--white);
+    color: var(--orange);
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:before {
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked~.alert {
+    display: block;
+}
+
+
+
+.sign-up-canvas .top-nav{
+    display: flex;
+    justify-content: center;
+
+}
+.sign-up-canvas .top-nav img{
+    width: 240px;
+}
+.offcanvas-body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offcanvas-body .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-up-body .step{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+.sign-up-body .step p{
+    margin: 0px;
+}
+.sign-up-body .step img{
+    width: 101px;
+}
+
+.sign-up-body {
+    
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(50px);
+    border: 0px solid black;
+    border-radius: 15px;
+    padding: 40px 50px;
+    
+}
+
+.sign-up-body .feilds {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.t-feild {
+    /* width: 356px; */
+    height: 45px;
+    padding: 0px 14px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid #A2A2A2;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.con-btn{
+    height: 45px;
+    width: 100%;
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    color: var(--white);
+    font-style: normal;
+/* font-weight: 700; */
+font-size: 16px;
+}
+.orange-text{
+    color: var(--orange);
+}
