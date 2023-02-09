@@ -1,8 +1,8 @@
-$(document).ready(function() {
-    $("#color_mode").on("change", function () {
-        colorModePreview(this);
-    })
-});
+// $(document).ready(function() {
+//     $("#color_mode").on("change", function () {
+//         colorModePreview(this);
+//     })
+// });
 
 function colorModePreview(ele) {
     if($(ele).prop("checked") == true){
@@ -46,24 +46,47 @@ function checkPasswordMatch() {
   }
 
   function hide1() {
-    document.getElementById("sec1").style.display = "none";
-    document.getElementById("sec2").style.display = "flex";
-    var newEmail = document.getElementById("newEmail").value;
     
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "./functions/session.php", true);
-    xhr.onreadystatechange = function() {
-      if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-        alert(this.responseText);
-      }
-    };
-    // xhr.send();
-    xhr.send("function=saving&variable="+newEmail);
+  
     
-    console.log('Record updated successfully - '+newEmail);
+    // var xhr = new XMLHttpRequest();
+    // xhr.open("POST", "./functions/session.php", true);
+    // xhr.onreadystatechange = function() {
+    //   if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+    //     alert(this.responseText);
+    //   }
+    // };
+    // // xhr.send();
+    // xhr.send("function=saving&variable="+newEmail);
+    
 
 
-    processFuncVerification(newEmail);
+	
+  var xhttp = new XMLHttpRequest();
+  // xhttp.onreadystatechange = function() {
+  //   if (this.readyState == 4 && this.status == 200) {
+  //     document.getElementById("result").innerHTML = this.responseText;
+  //   }
+  // };
+  xhttp.open("POST", "js/data-crud.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  var inputData = document.getElementById("newEmail").value;
+  xhttp.send("inputData=" + inputData);
+			
+		
+	
+  console.log('Record updated successfully - '+inputData);
+
+
+
+  // var newEmail = document.getElementById("newEmail").value;
+  document.getElementById('submitedEmail').innerHTML = inputData;
+
+  document.getElementById("signup-s1").style.display = "none";
+  document.getElementById("signup-s2").style.display = "flex";
+
+
+    // processFuncVerification(newEmail);
   }
   
   function hide2() {

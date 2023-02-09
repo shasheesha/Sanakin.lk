@@ -1,6 +1,6 @@
 <?php
-include("code-generate.php");
-include("email-configuration.php");
+include "code-generate.php";
+include "email-configuration.php";
 
 // https://drive.google.com/uc?id=1PgV43MSYVk4-qN4HSjq9i3aRsJh_DvPU
 // https://drive.google.com/uc?id=1JI8gMeILy4Tt9BeuKbN7-ZeYJCnWVisT
@@ -30,7 +30,7 @@ function emailVerificationSend($toEmail){
                   <td style='text-align:center;font-size: 36px; font-weight: bold; color: #000000;'>Verify Your Email</td>
                 </tr>
                 <tr>
-                  <td style='text-align:center;'><img src='https://shasheesha.github.io/Sanakin.lk/assets/icons/orange-shild.png' style='width: 165px;margin-top: 20px;' alt='verify code'></td>
+                  <td style='text-align:center;'><img src='https://shasheesha.github.io/Sanakin.lk/assets/icons/orange-shild.png' style='width: 165px; margin-top: 20px;' alt='verify code'></td>
                 </tr>
                 <tr style='margin-top: 30px;'>
                   <td style='width: 512px; font-size: 16px;font-weight: 500; text-align: left;'>
@@ -77,7 +77,7 @@ function emailVerificationSend($toEmail){
                   <td style='background-color: gray; height: 1px;'></td>
                 </tr>
                 <tr>
-                  <td style='font-family: 'Manrope', sans-serif; font-size: 14px; text-align: center; color: gray;'>
+                  <td style='font-family: Manrope, sans-serif; font-size: 14px; text-align: center; color: gray;'>
                     You have received this mandatory service announcement to update you about important changes to <a href='#' style='color: #FF9C00; text-decoration: none;'>Sanakin.lk</a> or your account.
                   </td>
                 </tr>
@@ -92,9 +92,9 @@ function emailVerificationSend($toEmail){
 </html>
 
 ";
-    echo "consol.log(Generated code: $code)";
+    echo "<script> console.log('Generated code- ".$code."'); </script>";
     send_email($to, $subject, $body);
     // send_email("shashishajanith1@gmail.com","testing subject" , "testing");
 }
-emailVerificationSend("shashishajanith1@gmail.com");
+// emailVerificationSend("shashishajanith1@gmail.com");
 ?>
