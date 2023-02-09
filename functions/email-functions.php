@@ -24,13 +24,13 @@ function emailVerificationSend($toEmail){
             <td style='text-align: center; font-family: 'Manrope', sans-serif;'>
               <table style='margin: auto;'>
                 <tr>
-                  <td style='text-align:center;'><img src='' style='width: 200px; margin-top: 30px;' alt='sanakin.lk'></td>
+                  <td style='text-align:center;'><img src='#' style='width: 200px; margin-top: 30px;' alt='sanakin.lk'></td>
                 </tr>
                 <tr>
                   <td style='text-align:center;font-size: 36px; font-weight: bold; color: #000000;'>Verify Your Email</td>
                 </tr>
                 <tr>
-                  <td style='text-align:center;'><img src='' style='width: 165px;margin-top: 20px;' alt='verify code'></td>
+                  <td style='text-align:center;'><img src='#' style='width: 165px;margin-top: 20px;' alt='verify code'></td>
                 </tr>
                 <tr style='margin-top: 30px;'>
                   <td style='width: 512px; font-size: 16px;font-weight: 500; text-align: left;'>
