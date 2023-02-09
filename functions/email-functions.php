@@ -30,7 +30,7 @@ function emailVerificationSend($toEmail){
                   <td style='text-align:center;font-size: 36px; font-weight: bold; color: #000000;'>Verify Your Email</td>
                 </tr>
                 <tr>
-                  <td style='text-align:center;'><img src='https://shasheesha.github.io/Sanakin.lk/assets/icons/orange-shild.svg' style='width: 165px;margin-top: 20px;' alt='verify code'></td>
+                  <td style='text-align:center;'><img src='https://shasheesha.github.io/Sanakin.lk/assets/icons/orange-shild.png' style='width: 165px;margin-top: 20px;' alt='verify code'></td>
                 </tr>
                 <tr style='margin-top: 30px;'>
                   <td style='width: 512px; font-size: 16px;font-weight: 500; text-align: left;'>
