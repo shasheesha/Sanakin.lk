@@ -24,7 +24,7 @@ function emailVerificationSend(){
             <td style='text-align: center; font-family: 'Manrope', sans-serif;'>
               <table style='margin: auto;'>
                 <tr>
-                  <td style='text-align:center;'><img src='' style='width: 200px; margin-top: 30px;' alt='sanakin.lk'></td>
+                  <td style='text-align:center;'><img src='https://raw.githubusercontent.com/shasheesha/Sanakin.lk/main/assets/sanakin-logo.png' style='width: 200px; margin-top: 30px;' alt='sanakin.lk'></td>
                 </tr>
                 <tr>
                   <td style='text-align:center;font-size: 36px; font-weight: bold; color: #000000;'>Verify Your Email</td>
