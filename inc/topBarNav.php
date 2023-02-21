@@ -13,10 +13,23 @@
                         <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
                     </ul>
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-orange ml-2" id="login-btn" type="button">Sign Up</button>
+                        <?php if(!isset($_SESSION['userdata']['id'])): ?>
+                            <button class="btn btn-orange ml-2" id="login-btn" type="button">Sign Up</button>
+                            <?php else: ?>
                         <button class="btn btn-outline-orange ml-2" id="login-btn" type="button">Sign in</button>
 
                     </div>
                 </div>
             </div>
         </nav>
+
+<script>
+    $(function(){
+        $('#login-btn').click(function(){
+            uni_modal("","login.php")
+        })
+    })
+</script>
+
+
+
