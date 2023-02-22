@@ -92,8 +92,9 @@ function emailVerificationSend($toEmail){
 </html>
 
 ";
-    echo "<script> console.log('Generated code- ".$code."'); </script>";
-    send_email($to, $subject, $body);
+    
+    return send_email($to, $subject, $body);
+  
     // send_email("shashishajanith1@gmail.com","testing subject" , "testing");
 }
 // emailVerificationSend("shashishajanith1@gmail.com");

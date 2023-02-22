@@ -69,6 +69,6 @@
         </div>
     </div>
 </body>
-<script src="./js/sign-up.js"></script>
+<script src="./js/sign-up.js?v=1.1"></script>
 
 </html>

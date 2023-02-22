@@ -32,9 +32,10 @@ function send_email($to, $subject, $body) {
         $mail->Subject = $subject;
         $mail->Body    = $body;
 
-        $mail->send();
-        echo 'Message has been sent';
+        return $mail->send();
+    
     } catch (Exception $e) {
+        return false;
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     } finally{
         

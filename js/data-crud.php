@@ -1,79 +1,54 @@
 <?php
-include "../functions/email-functions.php";
 include "../connectors/db-connector.php";
-// $conn = mysqli_connect('localhost', 'root', '', 'test');
 
-// extract($_POST);
-// if(isset($_POST['newEmail'])){
-//     $_SESSION['newEmail'] = $_POST['newEmail'];
-//     echo"<script>console.log('Record updated successfully);</script>";
-// }
+include "../functions/email-functions.php";
 
-// $email = $_POST['inputData'];
-// $username = $_POST['newEmail'];
-// $password = $_POST['newPassword'];
-// $query = "
-// INSERT INTO users 
-// (email) 
-// VALUES (".$email.")
-// ";
-
-// $statement = $conn->prepare($query);
-
-// $data = '';
-
-// foreach($_POST as $k => $v) {
-//     if(empty($data)) {
-//         $data .= "$k ='$v'";
-//     } else {
-//         $data .= ", $k='$v'";
-//     }
-// }
-
-
-// $sql = "INSERT INTO users set $data";
-// $results = mysqli_query($connection, $sql);
-
-// if($results) {
-//     echo "Data Submitted Successfully";
-// } else {
-    // echo "Data submission has failed, Please Try Again"+ $_SESSION['newEmail'];
-    
-// }
-
-
-
-
-
-
-
-
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $database = "test";
-
-// $conn = new mysqli($servername, $username, $password, $database);
 try {
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "<script>console.log ('Connected successfully.')</script>";
+  //echo "Connected successfully";
 } catch(Exception $error) {
   echo "Connection failed: " . $error->getMessage();
 }
 
 
-  $inputData = $_POST['inputData'];
-  echo "The input data is: " . $inputData;
-
-  $sql = "INSERT INTO users (username, email, password) 
-  VALUES ('blank', '". $inputData . "', 'blankpass');";
+  $newEmail = $_POST['newEmail'];
+  $newPassword = $_POST['newPassword'];
+  $newTypeBool = $_POST['newType'];
+  $newStatus = "Pending Verification";
+  //echo "The input data is: " . $newEmail;
+  
+  if($newTypeBool == 1){
+    $newType = "customer";
+  }elseif($newTypeBool == 0){
+    $newType = "shopper";
+  }else{
+    $newType = "unknown";
+  }
+  
+  
+  // $_SESSION['newEmail'] = $inputData;
+  $sql = "INSERT INTO users (u_email, u_password, u_type, u_status) 
+  VALUES ('".$newEmail."', '". $newPassword . "', '".$newType."', '".$newStatus."');";
 
   if (mysqli_query($conn, $sql)) {
-      echo "<script> console.log('Record updated successfully'); </script>";
-    //   header('location:problems.php');
-    emailVerificationSend($inputData);
+
+    $sendOnj = [
+      'status' => "ERROE",
+      'msg' => "Record not updated successfully"
+    ];
+
+    $isSent = emailVerificationSend($newEmail);
+    if($isSent){
+    $sendOnj = [
+      'status' => "SUCCESS",
+      'msg' => "Record updated successfully"
+    ];
+  }
+    
+    echo json_encode($sendOnj);
+
   } else {
       echo "Error updating record: " . $conn->error;
   }

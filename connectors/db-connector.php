@@ -3,14 +3,13 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "test";
+$database = "db_sanakin_lk";
 
 $conn = new mysqli($servername, $username, $password, $database);
 try {
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "<script>console.log ('Connected successfully.')</script>";
 } catch(Exception $error) {
   echo "Connection failed: " . $error->getMessage();
 }
