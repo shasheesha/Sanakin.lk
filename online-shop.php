@@ -58,25 +58,66 @@
 
     <div class="section products">
         <div class="container">
-            <div class="cat-panel">
-                <h2 class="section-header">Category Name</h2>
-                <div class="explore-btn" id="cat-seemore">See more <img src="./assets/icons/more-arrow.svg" alt="" sizes="w-16" srcset=""></div>
-            </div>
-            <div class="row">
-                <?php
-                for ($p1 = 0; $p1 < 4; $p1++) {
-                    echo "<div class='card col-md-3'>
-                    <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Product Name</h5>
-                        <h6>Rs. <span class='card-price'>100,000.00</span></h6>
-                        <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <input type='button' class='btn primary' value='Add to Cart'>
+            <div class="filter-tool col-md-3">
+                <div class="reset-btn-sec">
+                    <h6>Filter</h6>
+                    <input type="button" value="Reset">
+                </div>
+                <div class="tool price-filter">
+                    <h6>Price</h6>
+                    <div class="range-selector">
+                        <input type="range" name="price-range" id="price-range" value="100000" min="0" max="100000" onmousemove="showPriceRange(this.value)">
+                        <p>max price Rs.<span id="rangeValue"></span></p>
                     </div>
-                </div>";
-                }
-                ?>
+                    <select name="" id="priceVariant">
+                        <option value="l-h">Lower to Higher</option>
+                        <option value="h-l">Higher to Lower</option>
+                    </select>
 
+                </div>
+                <div class="tool cat-filter">
+                    <h6>Category</h6>
+                    <div class="cat-values">
+                        <div class="cat-item">
+                            <input type="checkbox" name="category" id="10" value="cat1">
+                            <label for="cat1">Category 1</label>
+                        </div>
+                        <div class="cat-item">
+                            <input type="checkbox" name="category" id="11" value="cat2">
+                            <label for="cat2">Category 2</label>
+                        </div>
+                        <div class="cat-item">
+                            <input type="checkbox" name="category" id="12" value="cat3">
+                            <label for="cat3">Category 3</label>
+                        </div>
+                        <div class="cat-item">
+                            <input type="checkbox" name="category" id="13" value="cat4">
+                            <label for="cat4">Category 4</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool city-filter">
+                    <h6>City</h6>
+                    <div class="city-values">
+                        <div class="city-item">
+                            <input type="checkbox" name="a" id="0" value="cat1">
+                            <label for="city1">city 1</label>
+                        </div>
+                        <div class="cat-item">
+                            <input type="checkbox" name="a" id="1" value="cat2">
+                            <label for="city2">city 2</label>
+                        </div>
+                        <div class="cat-item">
+                            <input type="checkbox" name="a" id="2" value="cat3">
+                            <label for="city3">city 3</label>
+                        </div>
+                        <div class="cat-item">
+                            <input type="checkbox" name="a" id="3" value="cat4">
+                            <label for="city4">city 4</label>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="Apply" onclick="filterApply(3,13)">
             </div>
         </div>
     </div>
@@ -84,6 +125,7 @@
     <?php include "./partials/home-footer.php"; ?>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/tools.js"></script>
 </body>
 
 </html>
