@@ -35,24 +35,16 @@ include "./partials/home-header.php";?>
                 </div>
                 <div class="carousel-caption d-none d-md-block hero-banner-content">
                     <div class="row hero-content">
-                        <h1 class="main-title">Shop Online</h1>
+                        <h1 class="main-title">What's New to Marcket</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <div class="search-bar">
+                        <!-- <div class="search-bar">
                             <input type="search" class="search" name="Search" placeholder="Search Here Shop or Product" id="">
                             <input type="button" id="search-btn" class="search-btn btn primary" value="Search">
-                        </div>
+                        </div> -->
 
                     </div>
 
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
             </div>
         </div>
     </div>
@@ -60,7 +52,7 @@ include "./partials/home-header.php";?>
     <div class="section products">
         <div class="container">
             <div class="row">
-                <div class="filter-tool col-md-3">
+                <!-- <div class="filter-tool col-md-3">
                     <div class="tool reset-btn-sec">
                         <h5>Filter</h5>
                         <input type="button" class="min-btn" value="Reset">
@@ -120,21 +112,21 @@ include "./partials/home-header.php";?>
                         </div>
                     </div>
                     <input type="button" id="apply-btn" value="Apply" onclick="filterApply(3,13)">
-                </div>
+                </div> -->
 
-                <div class="col-md-9">
-                <ul id="paginated-list" class="row" data-current-page="1" aria-live="polite">
+                <div class="col-md-12">
+                <ul id="paginated-list" class="row" data-current-page="1" aria-live="polite"  style="padding-left: 0px !important;">
                     <?php
 
                     
                         for ($p1 = 0; $p1 < 20; $p1++) {
-                            echo "<li class='card col-md-4'>
+                            echo "<li class='card col-md-3' >
                             <div class='product-tile' onclick=location.href='./single-product.php?id=".$p1."'>
                     <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
                     <div class='card-body'>
                         <h5 class='card-title'>Product Name</h5>
                         <h6>Rs. <span class='card-price'>100,000.00</span></h6>
-                        <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
                         <input type='button' class='btn primary' value='Add to Cart'>
                     </div>
                     </div>

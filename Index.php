@@ -1,10 +1,3 @@
-<?php
-// session_start();
-// $_SESSION["newEmail"] = "asdasdas";
-// echo "<script> console.log('Record updated successfully (PHP)- ".$_SESSION["newEmail"]."'); </script>";
-
-// unset($_SESSION['newEmail']);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +11,8 @@
 </head>
 <?php 
 
-include "./partials/home-navigation.php"; ?>
+include "./partials/home-navigation.php"; 
+include "./partials/home-header.php";?>
 
 <body>
     <div class="section hero-sec">
@@ -113,12 +107,14 @@ include "./partials/home-navigation.php"; ?>
                 <?php
                 for ($p1 = 0; $p1 < 4; $p1++) {
                     echo "<div class='card col-md-3'>
+                    <div class='product-tile' onclick=location.href='./single-product.php?id=".$p1."'>
                     <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
                     <div class='card-body'>
                         <h5 class='card-title'>Product Name</h5>
                         <h6>Rs. <span class='card-price'>100,000.00</span></h6>
                         <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <input type='button' class='btn primary' value='Add to Cart'>
+                    </div>
                     </div>
                 </div>";
                 }
@@ -142,14 +138,14 @@ include "./partials/home-navigation.php"; ?>
                             <?php
                             for ($p1 = 0; $p1 < 4; $p1++) {
                                 echo "<div class='col-md-3'>
-                    <div class='card'>
+                    <div class='card' onclick=location.href='./shop-profile.php?id=".$p1."'>
                         <img class='shop-profile' src='./assets/icons/shop.svg' alt=''>
                         <div class='text'>
                             <h5 class='shop-name'>Shop Name</h5>
                             <h6><span id='product-count'></span> Products</h6>
                         </div>
                     </div>
-                    <div class='card'>
+                    <div class='card' onclick=location.href='./shop-profile.php?id=".$p1."'>
                         <img class='shop-profile' src='./assets/icons/shop.svg' alt=''>
                         <div class='text'>
                             <h5 class='shop-name'>Shop Name</h5>
@@ -167,7 +163,7 @@ include "./partials/home-navigation.php"; ?>
                         <div class="row">
                             <?php
                             for ($p1 = 0; $p1 < 4; $p1++) {
-                                echo "<div class='col-md-3'>
+                                echo "<div class='col-md-3' onclick=location.href='./shop-profile.php?id=".$p1."'>
                     <div class='card'>
                         <img class='shop-profile' src='./assets/icons/shop.svg' alt=''>
                         <div class='text'>
@@ -175,7 +171,7 @@ include "./partials/home-navigation.php"; ?>
                             <h6><span id='product-count'></span> Products</h6>
                         </div>
                     </div>
-                    <div class='card'>
+                    <div class='card' onclick=location.href='./shop-profile.php?id=".$p1."'>
                         <img class='shop-profile' src='./assets/icons/shop.svg' alt=''>
                         <div class='text'>
                             <h5 class='shop-name'>Shop Name</h5>
@@ -212,12 +208,14 @@ include "./partials/home-navigation.php"; ?>
                 <?php
                 for ($p1 = 0; $p1 < 4; $p1++) {
                     echo "<div class='card col-md-3'>
+                    <div class='product-tile' onclick=location.href='./single-product.php?id=".$p1."'>
                     <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
                     <div class='card-body'>
                         <h5 class='card-title'>Product Name</h5>
                         <h6>Rs. <span class='card-price'>100,000.00</span></h6>
                         <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <input type='button' class='btn primary' value='Add to Cart'>
+                    </div>
                     </div>
                 </div>";
                 }
@@ -246,15 +244,6 @@ include "./partials/home-navigation.php"; ?>
                     <img src="./assets/hero-slides/slide 1.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#ad-banner-carousel1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#ad-banner-carousel1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
         </div>
     </div>
 
@@ -281,12 +270,14 @@ include "./partials/home-navigation.php"; ?>
                             <?php
                             for ($p1 = 0; $p1 < 8; $p1++) {
                                 echo "<div class='card col-md-3'>
+                                <div class='product-tile' onclick=location.href='./single-product.php?id=".$p1."'>
                     <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
                     <div class='card-body'>
                         <h5 class='card-title'>Product Name</h5>
                         <h6>Rs. <span class='card-price'>100,000.00</span></h6>
                         <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <input type='button' class='btn primary' value='Add to Cart'>
+                    </div>
                     </div>
                 </div>";
                             }
@@ -303,12 +294,14 @@ include "./partials/home-navigation.php"; ?>
                             <?php
                             for ($p1 = 0; $p1 < 8; $p1++) {
                                 echo "<div class='card col-md-3'>
+                                <div class='product-tile' onclick=location.href='./single-product.php?id=".$p1."'>
                     <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
                     <div class='card-body'>
                         <h5 class='card-title'>Product Name</h5>
                         <h6>Rs. <span class='card-price'>100,000.00</span></h6>
                         <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <input type='button' class='btn primary' value='Add to Cart'>
+                    </div>
                     </div>
                 </div>";
                             }
@@ -325,12 +318,14 @@ include "./partials/home-navigation.php"; ?>
                             <?php
                             for ($p1 = 0; $p1 < 8; $p1++) {
                                 echo "<div class='card col-md-3'>
+                                <div class='product-tile' onclick=location.href='./single-product.php?id=".$p1."'>
                     <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
                     <div class='card-body'>
                         <h5 class='card-title'>Product Name</h5>
                         <h6>Rs. <span class='card-price'>100,000.00</span></h6>
                         <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <input type='button' class='btn primary' value='Add to Cart'>
+                    </div>
                     </div>
                 </div>";
                             }
@@ -347,96 +342,7 @@ include "./partials/home-navigation.php"; ?>
 
             </div>
 
-            <!-- <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Collapsible Group Item #1
-                            </button>
-                        </h5>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="row">
-                                <?php
-                                for ($p1 = 0; $p1 < 4; $p1++) {
-                                    echo "<div class='card col-md-3'>
-                    <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Product Name</h5>
-                        <h6>Rs. <span class='card-price'>100,000.00</span></h6>
-                        <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <input type='button' class='btn primary' value='Add to Cart'>
-                    </div>
-                </div>";
-                                }
-                                ?>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="row">
-                                <?php
-                                for ($p1 = 0; $p1 < 4; $p1++) {
-                                    echo "<div class='card col-md-3'>
-                    <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Product Name</h5>
-                        <h6>Rs. <span class='card-price'>100,000.00</span></h6>
-                        <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <input type='button' class='btn primary' value='Add to Cart'>
-                    </div>
-                </div>";
-                                }
-                                ?>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="row">
-                                <?php
-                                for ($p1 = 0; $p1 < 4; $p1++) {
-                                    echo "<div class='card col-md-3'>
-                    <img class='card-img-top' src='./assets/products.png' alt='Card image cap'>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Product Name</h5>
-                        <h6>Rs. <span class='card-price'>100,000.00</span></h6>
-                        <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <input type='button' class='btn primary' value='Add to Cart'>
-                    </div>
-                </div>";
-                                }
-                                ?>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            
 
 
 

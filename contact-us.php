@@ -7,9 +7,27 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Sanakin.LK | Trusted Shops</title>
-    <title>Document</title>
 </head>
+<?php include "./partials/home-navigation.php"; ?>
 <body>
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <?php include "./sign-up.php"; ?>
+    <?php include "./partials/home-footer.php"; ?>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

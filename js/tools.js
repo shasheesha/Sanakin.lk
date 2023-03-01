@@ -1,6 +1,9 @@
-function showPriceRange(price){
-    document.getElementById('rangeValue').innerHTML = price;
-    console.log("Range is :"+price);
+
+const rangeInput = document.getElementById('priceRangeInput');
+if(rangeInput){
+    rangeInput.addEventListener('input', function(e){
+        document.getElementById('rangeValue').innerHTML = e.target.value;
+    });
 }
 
 function filterApply(cityLength,catLength){

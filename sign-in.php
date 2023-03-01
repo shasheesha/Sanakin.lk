@@ -1,10 +1,10 @@
 <body>
-    <div class="offcanvas offcanvas-end sign-up-canvas" tabindex="-1" id="sign-upoffcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end sign-up-canvas" tabindex="-1" id="sign-inoffcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <nav class="top-nav">
-            <img class="logo" src="./assets/sanakin-logo.png" alt="">
+            <!-- <img class="logo" src="./assets/sanakin-logo.png" alt=""> -->
         </nav>
         <div class="offcanvas-body">
 
