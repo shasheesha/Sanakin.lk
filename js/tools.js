@@ -67,3 +67,25 @@ function filterApply(cityLength,catLength){
         console.log("categories : "+categories);
         console.log("Cities : "+cities);
     }
+
+        const view1 = document.querySelector('#view1');
+        const view2 = document.querySelector('#view2');
+        const view1btn = document.querySelector('#check-out');
+        const view2btn = document.querySelector('#check-out-confirm');
+        const sCartModal = document.querySelector('#s-cart-offcanvasRight');
+        const modalBackdrop = document.querySelector('offcanvas-backdrop');
+
+        view1btn.addEventListener('click',()=>{
+            view1.classList.add('hidden');
+            view2.classList.remove('hidden');
+        })
+        view2btn.addEventListener('click',()=>{
+            sCartModal.classList.remove('show');
+            modalBackdrop.classList.remove('show');
+            view2.classList.add('hidden');
+            view1.classList.remove('hidden');
+
+
+        })
+        
+    
