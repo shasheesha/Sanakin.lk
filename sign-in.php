@@ -1,5 +1,5 @@
 <body>
-    <div class="offcanvas offcanvas-end sign-up-canvas" tabindex="-1" id="sign-inoffcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end sign-up-canvas" tabindex="-1" id="sign-in-offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -45,6 +45,6 @@
         </div>
     </div>
 </body>
-<script src="./js/sign-up.js?v=1.1"></script>
+<script src="./js/sign-up.js"></script>
 
 </html>

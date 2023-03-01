@@ -412,6 +412,8 @@ include "./partials/home-header.php";?>
 
     <?php include "./partials/home-footer.php"; ?>
     <?php include "./sign-up.php"; ?>
+    <?php include "./sign-in.php"; ?>
+    <?php include "./modals/shopping-cart.php"; ?>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
