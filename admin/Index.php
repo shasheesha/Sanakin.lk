@@ -1,542 +1,1131 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>sanakin.lk</title>
 
-<body>
+    <!-- ========== All CSS files linkup ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- ======== sidebar-nav start =========== -->
+    <aside class="sidebar-nav-wrapper">
+      <div class="navbar-logo">
+        <a href="index.php">
+          <img src="assets/images/logo/logo.png" alt="logo" />
+        </a>
+      </div>
+      <nav class="sidebar-nav" style="margin-top: 60px;">
+        <ul>
+          <li class="nav-item active" style="background-color: #FF9C00;">
+            <a href="index.php">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path
+                    d="M17.4167 4.58333V6.41667H13.75V4.58333H17.4167ZM8.25 4.58333V10.0833H4.58333V4.58333H8.25ZM17.4167 11.9167V17.4167H13.75V11.9167H17.4167ZM8.25 15.5833V17.4167H4.58333V15.5833H8.25ZM19.25 2.75H11.9167V8.25H19.25V2.75ZM10.0833 2.75H2.75V11.9167H10.0833V2.75ZM19.25 10.0833H11.9167V19.25H19.25V10.0833ZM10.0833 13.75H2.75V19.25H10.0833V13.75Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Dashboard</span>
+            </a>
+          </li>
 
-<div>
-  <link href="./assets/css/home-dashboard-shopper.css" rel="stylesheet" />
-  <div>
-    <div class="home-dashboard-shopper-home-dashboard-shopper">
-      <div class="home-dashboard-shopper-left-nav">
-        <img
-          src="playground_assets/rectangle11765-8udb-300w.png"
-          alt="Rectangle11765"
-          class="home-dashboard-shopper-rectangle1"
-        />
-        <div class="home-dashboard-shopper-group45">
-          <span class="home-dashboard-shopper-text"><span>Accounts</span></span>
-          <div class="home-dashboard-shopper-group395">
-            <div class="home-dashboard-shopper-group1">
-              <div class="home-dashboard-shopper-group">
-                <div class="home-dashboard-shopper-group01">
-                  <img
-                    src="playground_assets/vector1773-4f5l.svg"
-                    alt="Vector1773"
-                    class="home-dashboard-shopper-vector"
+          <li class="nav-item">
+            <a href="complaint.php">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.4166 7.33333C18.9383 7.33333 20.1666 8.56167 20.1666 10.0833V15.5833H16.4999V19.25H5.49992V15.5833H1.83325V10.0833C1.83325 8.56167 3.06159 7.33333 4.58325 7.33333H5.49992V2.75H16.4999V7.33333H17.4166ZM7.33325 4.58333V7.33333H14.6666V4.58333H7.33325ZM14.6666 17.4167V13.75H7.33325V17.4167H14.6666ZM16.4999 13.75H18.3333V10.0833C18.3333 9.57917 17.9208 9.16667 17.4166 9.16667H4.58325C4.07909 9.16667 3.66659 9.57917 3.66659 10.0833V13.75H5.49992V11.9167H16.4999V13.75ZM17.4166 10.5417C17.4166 11.0458 17.0041 11.4583 16.4999 11.4583C15.9958 11.4583 15.5833 11.0458 15.5833 10.5417C15.5833 10.0375 15.9958 9.625 16.4999 9.625C17.0041 9.625 17.4166 10.0375 17.4166 10.5417Z"
                   />
-                </div>
-              </div>
-              <div class="home-dashboard-shopper-group02">
-                <div class="home-dashboard-shopper-group03">
-                  <img
-                    src="playground_assets/vector1776-jz9.svg"
-                    alt="Vector1776"
-                    class="home-dashboard-shopper-vector01"
+                </svg>
+              </span>
+              <span class="text">Complaint</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Accounts.php">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.4166 7.33333C18.9383 7.33333 20.1666 8.56167 20.1666 10.0833V15.5833H16.4999V19.25H5.49992V15.5833H1.83325V10.0833C1.83325 8.56167 3.06159 7.33333 4.58325 7.33333H5.49992V2.75H16.4999V7.33333H17.4166ZM7.33325 4.58333V7.33333H14.6666V4.58333H7.33325ZM14.6666 17.4167V13.75H7.33325V17.4167H14.6666ZM16.4999 13.75H18.3333V10.0833C18.3333 9.57917 17.9208 9.16667 17.4166 9.16667H4.58325C4.07909 9.16667 3.66659 9.57917 3.66659 10.0833V13.75H5.49992V11.9167H16.4999V13.75ZM17.4166 10.5417C17.4166 11.0458 17.0041 11.4583 16.4999 11.4583C15.9958 11.4583 15.5833 11.0458 15.5833 10.5417C15.5833 10.0375 15.9958 9.625 16.4999 9.625C17.0041 9.625 17.4166 10.0375 17.4166 10.5417Z"
                   />
-                </div>
-              </div>
-              <div class="home-dashboard-shopper-group04">
-                <div class="home-dashboard-shopper-group05">
-                  <img
-                    src="playground_assets/vector1779-vc4.svg"
-                    alt="Vector1779"
-                    class="home-dashboard-shopper-vector02"
+                </svg>
+              </span>
+              <span class="text">Accounts</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="products.php">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.4166 7.33333C18.9383 7.33333 20.1666 8.56167 20.1666 10.0833V15.5833H16.4999V19.25H5.49992V15.5833H1.83325V10.0833C1.83325 8.56167 3.06159 7.33333 4.58325 7.33333H5.49992V2.75H16.4999V7.33333H17.4166ZM7.33325 4.58333V7.33333H14.6666V4.58333H7.33325ZM14.6666 17.4167V13.75H7.33325V17.4167H14.6666ZM16.4999 13.75H18.3333V10.0833C18.3333 9.57917 17.9208 9.16667 17.4166 9.16667H4.58325C4.07909 9.16667 3.66659 9.57917 3.66659 10.0833V13.75H5.49992V11.9167H16.4999V13.75ZM17.4166 10.5417C17.4166 11.0458 17.0041 11.4583 16.4999 11.4583C15.9958 11.4583 15.5833 11.0458 15.5833 10.5417C15.5833 10.0375 15.9958 9.625 16.4999 9.625C17.0041 9.625 17.4166 10.0375 17.4166 10.5417Z"
                   />
-                </div>
-              </div>
-              <div class="home-dashboard-shopper-group06">
-                <div class="home-dashboard-shopper-group07">
-                  <img
-                    src="playground_assets/vector1782-2gcq.svg"
-                    alt="Vector1782"
-                    class="home-dashboard-shopper-vector03"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="playground_assets/rectangle141803-e3j-300w.png"
-          alt="Rectangle141803"
-          class="home-dashboard-shopper-rectangle14"
-        />
-        <div class="home-dashboard-shopper-group47">
-          <span class="home-dashboard-shopper-text002">
-            <span>Complaint</span>
-          </span>
-          <img
-            src="playground_assets/filetext1806-pxx.svg"
-            alt="filetext1806"
-            class="home-dashboard-shopper-filetext"
-          />
-        </div>
-        <span class="home-dashboard-shopper-text004"><span>Profile</span></span>
-        <div class="home-dashboard-shopper-group42">
-          <div class="home-dashboard-shopper-group37">
-            <span class="home-dashboard-shopper-text006">
-              <span>Admin</span>
-            </span>
-            <span class="home-dashboard-shopper-text008">
-              <span>Admin</span>
-            </span>
-          </div>
-          <img
-            src="playground_assets/ellipse11827-jlgu-200h.png"
-            alt="Ellipse11827"
-            class="home-dashboard-shopper-ellipse1"
-          />
-        </div>
-        <div class="home-dashboard-shopper-group40">
-          <div class="home-dashboard-shopper-group41">
-            <span class="home-dashboard-shopper-text010">
-              <span>Log out</span>
-            </span>
-            <div class="home-dashboard-shopper-group39">
-              <img
-                src="playground_assets/logout1833-m8d.svg"
-                alt="logout1833"
-                class="home-dashboard-shopper-logout"
-              />
-            </div>
-          </div>
-        </div>
-        <img
-          src="playground_assets/sanakilogo11837-3va-200h.png"
-          alt="sanakilogo11837"
-          class="home-dashboard-shopper-sanakilogo1"
-        />
-        <div class="home-dashboard-shopper-box2"></div>
-        <div class="home-dashboard-shopper-group49">
-          <span class="home-dashboard-shopper-text012">
-            <span>Dashboard</span>
-          </span>
-          <div class="home-dashboard-shopper-group3">
-            <img
-              src="playground_assets/home1843-qu2q.svg"
-              alt="home1843"
-              class="home-dashboard-shopper-home"
-            />
-          </div>
-        </div>
+                </svg>
+              </span>
+              <span class="text">Products</span>
+            </a>
+          </li>
+          
+
+          
+      <div class="promo-box">
+        <h5 style="color:#ffffff;">Profile</h5>
+        <a
+          href="index.php"
+          target="_blank"
+          rel="nofollow"
+          class="main-btn primary-btn btn-hover"
+        >
+          Log out
+        </a>
       </div>
-      <span class="home-dashboard-shopper-text014"><span>Dashboard</span></span>
-      <span class="home-dashboard-shopper-text016">
-        <span>12th January of 2023, 12:00 pm</span>
-      </span>
-      <div class="home-dashboard-shopper-group1647">
-        <span class="home-dashboard-shopper-text018">
-          <span>New Accounts</span>
-        </span>
-        <span class="home-dashboard-shopper-text020">
-          <span>Registered Date</span>
-        </span>
-        <span class="home-dashboard-shopper-text022">
-          <span>Customer Name</span>
-        </span>
-        <span class="home-dashboard-shopper-text024">
-          <span>AC. Verification</span>
-        </span>
-        <span class="home-dashboard-shopper-text026"><span>Type</span></span>
-      </div>
-      <div class="home-dashboard-shopper-group1633">
-        <div class="home-dashboard-shopper-box1">
-          <div class="home-dashboard-shopper-group08">
-            <div class="home-dashboard-shopper-group09">
-              <img
-                src="playground_assets/vector1872-c4ff.svg"
-                alt="Vector1872"
-                class="home-dashboard-shopper-vector04"
-              />
-            </div>
-          </div>
-          <div class="home-dashboard-shopper-group10">
-            <div class="home-dashboard-shopper-group11">
-              <img
-                src="playground_assets/vector1875-mlp.svg"
-                alt="Vector1875"
-                class="home-dashboard-shopper-vector05"
-              />
-            </div>
-          </div>
-          <div class="home-dashboard-shopper-group12">
-            <div class="home-dashboard-shopper-group13">
-              <img
-                src="playground_assets/vector1878-mnf.svg"
-                alt="Vector1878"
-                class="home-dashboard-shopper-vector06"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="home-dashboard-shopper-group1632">
-          <span class="home-dashboard-shopper-text028">
-            <span>Total Shoppers</span>
-          </span>
-          <span class="home-dashboard-shopper-text030"><span>240</span></span>
-        </div>
-      </div>
-      <div class="home-dashboard-shopper-group1656">
-        <div class="home-dashboard-shopper-group16321">
-          <span class="home-dashboard-shopper-text032">
-            <span>Today Total Orders</span>
-          </span>
-          <span class="home-dashboard-shopper-text034"><span>240</span></span>
-        </div>
-        <div class="home-dashboard-shopper-product11">
-          <div class="home-dashboard-shopper-group14">
-            <img
-              src="playground_assets/vector1889-g61o.svg"
-              alt="Vector1889"
-              class="home-dashboard-shopper-vector07"
-            />
-            <img
-              src="playground_assets/vector1890-tcy.svg"
-              alt="Vector1890"
-              class="home-dashboard-shopper-vector08"
-            />
-            <img
-              src="playground_assets/vector1891-80dd.svg"
-              alt="Vector1891"
-              class="home-dashboard-shopper-vector09"
-            />
-            <img
-              src="playground_assets/vector1892-6p51.svg"
-              alt="Vector1892"
-              class="home-dashboard-shopper-vector10"
-            />
-            <img
-              src="playground_assets/vector1893-igld.svg"
-              alt="Vector1893"
-              class="home-dashboard-shopper-vector11"
-            />
-            <img
-              src="playground_assets/vector1894-otep.svg"
-              alt="Vector1894"
-              class="home-dashboard-shopper-vector12"
-            />
-            <img
-              src="playground_assets/vector1895-slf.svg"
-              alt="Vector1895"
-              class="home-dashboard-shopper-vector13"
-            />
-            <img
-              src="playground_assets/vector1896-bkd.svg"
-              alt="Vector1896"
-              class="home-dashboard-shopper-vector14"
-            />
-            <img
-              src="playground_assets/vector1897-3hvg.svg"
-              alt="Vector1897"
-              class="home-dashboard-shopper-vector15"
-            />
-            <img
-              src="playground_assets/vector1898-s1y6.svg"
-              alt="Vector1898"
-              class="home-dashboard-shopper-vector16"
-            />
-            <img
-              src="playground_assets/vector1899-7k3k.svg"
-              alt="Vector1899"
-              class="home-dashboard-shopper-vector17"
-            />
-            <img
-              src="playground_assets/vector1900-oaff.svg"
-              alt="Vector1900"
-              class="home-dashboard-shopper-vector18"
-            />
-            <img
-              src="playground_assets/vector1901-do2f.svg"
-              alt="Vector1901"
-              class="home-dashboard-shopper-vector19"
-            />
-            <img
-              src="playground_assets/vector1902-cv8.svg"
-              alt="Vector1902"
-              class="home-dashboard-shopper-vector20"
-            />
-            <img
-              src="playground_assets/vector1903-rhng.svg"
-              alt="Vector1903"
-              class="home-dashboard-shopper-vector21"
-            />
-            <img
-              src="playground_assets/vector1904-fpyo.svg"
-              alt="Vector1904"
-              class="home-dashboard-shopper-vector22"
-            />
-            <img
-              src="playground_assets/vector1905-73jak.svg"
-              alt="Vector1905"
-              class="home-dashboard-shopper-vector23"
-            />
-            <img
-              src="playground_assets/vector1906-hd4t.svg"
-              alt="Vector1906"
-              class="home-dashboard-shopper-vector24"
-            />
-            <img
-              src="playground_assets/vector1907-6bt.svg"
-              alt="Vector1907"
-              class="home-dashboard-shopper-vector25"
-            />
-            <img
-              src="playground_assets/vector1908-zulk.svg"
-              alt="Vector1908"
-              class="home-dashboard-shopper-vector26"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="home-dashboard-shopper-group1634">
-        <div class="home-dashboard-shopper-group16322">
-          <span class="home-dashboard-shopper-text036">
-            <span>Total Customers</span>
-          </span>
-          <span class="home-dashboard-shopper-text038"><span>1200</span></span>
-        </div>
-        <img
-          src="playground_assets/sales11914-5z26.svg"
-          alt="sales11914"
-          class="home-dashboard-shopper-sales1"
-        />
-      </div>
-      <div class="home-dashboard-shopper-group1649">
-        <div class="home-dashboard-shopper-group1650">
-          <div class="home-dashboard-shopper-group173">
-            <div class="home-dashboard-shopper-group70">
-              <div class="home-dashboard-shopper-chevrondown"></div>
-            </div>
-          </div>
-          <span class="home-dashboard-shopper-text040">
-            <span>Ahinsa De Silva</span>
-          </span>
-          <span class="home-dashboard-shopper-text042">
-            <span>#231212135612</span>
-          </span>
-          <img
-            src="playground_assets/vector1927-abe.svg"
-            alt="Vector1927"
-            class="home-dashboard-shopper-vector27"
-          />
-          <span class="home-dashboard-shopper-text044">
-            <span>12/12/23</span>
-          </span>
-          <div class="home-dashboard-shopper-group2477">
-            <span class="home-dashboard-shopper-text046">
-              <span>Verified</span>
-            </span>
-          </div>
-          <span class="home-dashboard-shopper-text048">
-            <span>Shopper</span>
-          </span>
-        </div>
-      </div>
-      <div class="home-dashboard-shopper-group16501">
-        <div class="home-dashboard-shopper-group16502">
-          <div class="home-dashboard-shopper-group1731">
-            <div class="home-dashboard-shopper-group701">
-              <div class="home-dashboard-shopper-chevrondown1"></div>
-            </div>
-          </div>
-          <span class="home-dashboard-shopper-text050">
-            <span>Ahinsa De Silva</span>
-          </span>
-          <span class="home-dashboard-shopper-text052">
-            <span>#231212135612</span>
-          </span>
-          <img
-            src="playground_assets/vector1942-4f4.svg"
-            alt="Vector1942"
-            class="home-dashboard-shopper-vector28"
-          />
-          <span class="home-dashboard-shopper-text054">
-            <span>12/12/23</span>
-          </span>
-          <div class="home-dashboard-shopper-group2478">
-            <span class="home-dashboard-shopper-text056"><span>New</span></span>
-          </div>
-          <span class="home-dashboard-shopper-text058">
-            <span>Shopper</span>
-          </span>
-        </div>
-      </div>
-      <div class="home-dashboard-shopper-group1651">
-        <div class="home-dashboard-shopper-group16503">
-          <div class="home-dashboard-shopper-group1732">
-            <div class="home-dashboard-shopper-group702">
-              <div class="home-dashboard-shopper-chevrondown2"></div>
-            </div>
-          </div>
-          <span class="home-dashboard-shopper-text060">
-            <span>Ahinsa De Silva</span>
-          </span>
-          <span class="home-dashboard-shopper-text062">
-            <span>#231212135612</span>
-          </span>
-          <img
-            src="playground_assets/vector1957-g6dx.svg"
-            alt="Vector1957"
-            class="home-dashboard-shopper-vector29"
-          />
-          <span class="home-dashboard-shopper-text064">
-            <span>12/12/23</span>
-          </span>
-          <div class="home-dashboard-shopper-group2479">
-            <span class="home-dashboard-shopper-text066">
-              <span>Rejected</span>
-            </span>
-          </div>
-          <span class="home-dashboard-shopper-text068">
-            <span>Customer</span>
-          </span>
-        </div>
-      </div>
-      <div class="home-dashboard-shopper-group1652">
-        <div class="home-dashboard-shopper-group16504">
-          <div class="home-dashboard-shopper-group1733">
-            <div class="home-dashboard-shopper-group703">
-              <div class="home-dashboard-shopper-chevrondown3"></div>
-            </div>
-          </div>
-          <span class="home-dashboard-shopper-text070">
-            <span>Ahinsa De Silva</span>
-          </span>
-          <span class="home-dashboard-shopper-text072">
-            <span>#231212135612</span>
-          </span>
-          <img
-            src="playground_assets/vector1972-eqvs.svg"
-            alt="Vector1972"
-            class="home-dashboard-shopper-vector30"
-          />
-          <span class="home-dashboard-shopper-text074">
-            <span>12/12/23</span>
-          </span>
-          <div class="home-dashboard-shopper-group24771">
-            <span class="home-dashboard-shopper-text076">
-              <span>Verified</span>
-            </span>
-          </div>
-          <span class="home-dashboard-shopper-text078">
-            <span>Shopper</span>
-          </span>
-        </div>
-      </div>
-      <div class="home-dashboard-shopper-group1653">
-        <div class="home-dashboard-shopper-group16505">
-          <div class="home-dashboard-shopper-group1734">
-            <div class="home-dashboard-shopper-group704">
-              <div class="home-dashboard-shopper-chevrondown4"></div>
-            </div>
-          </div>
-          <span class="home-dashboard-shopper-text080">
-            <span>Ahinsa De Silva</span>
-          </span>
-          <span class="home-dashboard-shopper-text082">
-            <span>#231212135612</span>
-          </span>
-          <img
-            src="playground_assets/vector1987-lglu.svg"
-            alt="Vector1987"
-            class="home-dashboard-shopper-vector31"
-          />
-          <span class="home-dashboard-shopper-text084">
-            <span>12/12/23</span>
-          </span>
-          <div class="home-dashboard-shopper-group24772">
-            <span class="home-dashboard-shopper-text086">
-              <span>Verified</span>
-            </span>
-          </div>
-          <span class="home-dashboard-shopper-text088">
-            <span>Customer</span>
-          </span>
-        </div>
-      </div>
-      <div class="home-dashboard-shopper-group1654">
-        <div class="home-dashboard-shopper-group16506">
-          <div class="home-dashboard-shopper-group1735">
-            <div class="home-dashboard-shopper-group705">
-              <div class="home-dashboard-shopper-chevrondown5"></div>
-            </div>
-          </div>
-          <span class="home-dashboard-shopper-text090">
-            <span>Ahinsa De Silva</span>
-          </span>
-          <span class="home-dashboard-shopper-text092">
-            <span>#231212135612</span>
-          </span>
-          <img
-            src="playground_assets/vector1100-h9ct.svg"
-            alt="Vector1100"
-            class="home-dashboard-shopper-vector32"
-          />
-          <span class="home-dashboard-shopper-text094">
-            <span>12/12/23</span>
-          </span>
-          <div class="home-dashboard-shopper-group24773">
-            <span class="home-dashboard-shopper-text096">
-              <span>Verified</span>
-            </span>
-          </div>
-          <span class="home-dashboard-shopper-text098">
-            <span>Customer</span>
-          </span>
-        </div>
-      </div>
-      <div class="home-dashboard-shopper-group1655">
-        <div class="home-dashboard-shopper-group16507">
-          <div class="home-dashboard-shopper-group1736">
-            <div class="home-dashboard-shopper-group706">
-              <div class="home-dashboard-shopper-chevrondown6"></div>
-            </div>
-          </div>
-          <span class="home-dashboard-shopper-text100">
-            <span>Ahinsa De Silva</span>
-          </span>
-          <span class="home-dashboard-shopper-text102">
-            <span>#231212135612</span>
-          </span>
-          <img
-            src="playground_assets/vector1101-1t4c9.svg"
-            alt="Vector1101"
-            class="home-dashboard-shopper-vector33"
-          />
-          <span class="home-dashboard-shopper-text104">
-            <span>12/12/23</span>
-          </span>
-          <div class="home-dashboard-shopper-group24791">
-            <span class="home-dashboard-shopper-text106">
-              <span>Rejected</span>
-            </span>
-          </div>
-          <span class="home-dashboard-shopper-text108">
-            <span>Customer</span>
-          </span>
-        </div>
-      </div>
-      <img
-        src="playground_assets/line4771102-s42d.svg"
-        alt="Line4771102"
-        class="home-dashboard-shopper-line477"
-      />
-      <div class="home-dashboard-shopper-group529">
-        <span class="home-dashboard-shopper-text110">
-          <span>Products</span>
-        </span>
-        <div class="home-dashboard-shopper-group3951">
-          <img
-            src="playground_assets/product21102-4zk.svg"
-            alt="product21102"
-            class="home-dashboard-shopper-product2"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </aside>
+    <div class="overlay"></div>
 
 
-</body>
+
+    <main class="main-wrapper">
+      <!-- ========== header  ========== -->
+      <header class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-6">
+              <div class="header-left d-flex align-items-center">
+                <div class="menu-toggle-btn mr-20">
+                  <button
+                    id="menu-toggle"
+                    class="main-btn primary-btn btn-hover"
+                  >
+                    <i class="lni lni-chevron-left me-2"></i> Menu
+                  </button>
+                </div>
+                <div class="header-search d-none d-md-flex">
+                  <h3>Dashboard</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-6">
+              <div class="header-right">
+                
+                <!-- profile start -->
+                <div class="profile-box ml-15">
+                  <button
+                    class="dropdown-toggle bg-transparent border-0"
+                    type="button"
+                    id="profile"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="profile-info">
+                      <div class="info">
+                        <div class="image">
+                          <img
+                            src="assets/images/profile/profile-image.png"
+                            alt=""
+                          />
+                          <span class="status"></span>
+                        </div>
+                        <h6>John Doe</h6>
+                      </div>
+                    </div>
+                    <i class="lni lni-chevron-down"></i>
+                  </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ========== header end ========== -->
+<br><br>
+      <!-- ========== section start ========== -->
+      <section class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <div class="icon-card mb-30">
+                <div class="content">
+                  <h3 class="mb-10">34567</h3>
+                  <h6 class="text-sm text-medium">Total Shoppers</h6>
+                </div>
+                <div class="icon purple" style="margin-left: 100px;">
+                  <i class="lni lni-cart-full"></i>
+                </div>
+              </div>
+              <!-- End Icon Cart -->
+            </div>
+            <!-- End Col -->
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <div class="icon-card mb-30">
+                <div class="content">
+                  <h3 class="mb-10">1200</h3>
+                  <h6 class="text-sm text-medium">Total Customers</h6>
+                </div>
+                <div class="icon success" style="margin-left: 100px;">
+                  <i class="lni lni-dollar"></i>
+                </div>
+              </div>
+              <!-- End Icon Cart -->
+            </div>
+            <!-- End Col -->
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <div class="icon-card mb-30">
+                <div class="content">
+                  <h3 class="mb-10">120</h3>
+                  <h6 class="text-sm text-medium">Today Total Orders</h6>
+                </div>
+                <div class="icon primary" style="margin-left: 100px;">
+                  <i class="lni lni-credit-cards"></i>
+                </div>
+              </div>
+              <!-- End Icon Cart -->
+            </div>
+            </div>
+            <!-- End Col -->
+          </div>
+  
+          <!-- End Row -->
+      <section class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-12 col-lg-4 col-sm-6">
+            <div class="card-style mb-30">
+                <div
+                  class="
+                    title
+                    d-flex
+                    flex-wrap
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                </div>
+                <!-- End Title -->
+                <div class="table-responsive">
+                  <table class="table top-selling-table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <h6 class="text-sm text-medium">New Accounts</h6>
+                        </th>
+                        <th class="min-width">
+                          <h6 class="text-sm text-medium">
+                            Customer Name
+                          </h6>
+                        </th>
+                        <th class="min-width">
+                          <h6 class="text-sm text-medium">
+                            Registered date
+                          </h6>
+                        </th>
+                        <th class="min-width">
+                          <h6 class="text-sm text-medium">
+                            AC. Verification
+                          </h6>
+                        </th>
+                        <th class="min-width">
+                          <h6 class="text-sm text-medium">
+                            Type
+                          </h6>
+                        </th>
+                        <th class="min-width">
+                          <h6 class="text-sm text-medium">
+                              
+                          </h6>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#456546546546</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Ahinsa De Silva</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">12/11/22</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
+                        </td>
+                        <td>
+                        <p class="text-sm">Shopper</p>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Remove</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#456546546546</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Ahinsa De Silva</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">12/11/22</p>
+                        </td>
+                        <td>
+                          <span class="status-btn  success-btn">Completed</span>
+                        </td>
+                        <td>
+                        <p class="text-sm">Shopper</p>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Remove</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr><tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#456546546546</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Ahinsa De Silva</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">12/11/22</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
+                        </td>
+                        <td>
+                        <p class="text-sm">Shopper</p>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Remove</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr><tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#456546546546</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Ahinsa De Silva</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">12/11/22</p>
+                        </td>
+                        <td>
+                          <span class="status-btn  success-btn">Completed</span>
+                        </td>
+                        <td>
+                        <p class="text-sm">Shopper</p>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Remove</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr><tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#456546546546</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Ahinsa De Silva</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">12/11/22</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
+                        </td>
+                        <td>
+                        <p class="text-sm">Shopper</p>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Remove</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr><tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#456546546546</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Ahinsa De Silva</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">12/11/22</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
+                        </td>
+                        <td>
+                        <p class="text-sm">Shopper</p>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Remove</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr><tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#456546546546</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Ahinsa De Silva</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">12/11/22</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
+                        </td>
+                        <td>
+                        <p class="text-sm">Shopper</p>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Remove</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr><tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#456546546546</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Ahinsa De Silva</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">12/11/22</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
+                        </td>
+                        <td>
+                        <p class="text-sm">Shopper</p>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Remove</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- End Table -->
+                </div>
+              </div>
+            </div>
+            <!-- End Col -->
+          </div>
+        
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- ========== section end ========== -->
+
+    
+    </main>
+    <!-- ======== main-wrapper end =========== -->
+
+    <!-- ========= All Javascript files linkup ======== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
+    <script src="assets/js/dynamic-pie-chart.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/fullcalendar.js"></script>
+    <script src="assets/js/jvectormap.min.js"></script>
+    <script src="assets/js/world-merc.js"></script>
+    <script src="assets/js/polyfill.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      // ======== jvectormap activation
+      var markers = [
+        { name: "Egypt", coords: [26.8206, 30.8025] },
+        { name: "Russia", coords: [61.524, 105.3188] },
+        { name: "Canada", coords: [56.1304, -106.3468] },
+        { name: "Greenland", coords: [71.7069, -42.6043] },
+        { name: "Brazil", coords: [-14.235, -51.9253] },
+      ];
+
+      var jvm = new jsVectorMap({
+        map: "world_merc",
+        selector: "#map",
+        zoomButtons: true,
+
+        regionStyle: {
+          initial: {
+            fill: "#d1d5db",
+          },
+        },
+
+        labels: {
+          markers: {
+            render: (marker) => marker.name,
+          },
+        },
+
+        markersSelectable: true,
+        selectedMarkers: markers.map((marker, index) => {
+          var name = marker.name;
+
+          if (name === "Russia" || name === "Brazil") {
+            return index;
+          }
+        }),
+        markers: markers,
+        markerStyle: {
+          initial: { fill: "#4A6CF7" },
+          selected: { fill: "#ff5050" },
+        },
+        markerLabelStyle: {
+          initial: {
+            fontWeight: 400,
+            fontSize: 14,
+          },
+        },
+      });
+      // ====== calendar activation
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarMiniEl = document.getElementById("calendar-mini");
+        var calendarMini = new FullCalendar.Calendar(calendarMiniEl, {
+          initialView: "dayGridMonth",
+          headerToolbar: {
+            end: "today prev,next",
+          },
+        });
+        calendarMini.render();
+      });
+
+      // =========== chart one start
+      const ctx1 = document.getElementById("Chart1").getContext("2d");
+      const chart1 = new Chart(ctx1, {
+        // The type of chart we want to create
+        type: "line", // also try bar or other graph types
+
+        // The data for our dataset
+        data: {
+          labels: [
+            "Jan",
+            "Fab",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          // Information about the dataset
+          datasets: [
+            {
+              label: "",
+              backgroundColor: "transparent",
+              borderColor: "#4A6CF7",
+              data: [
+                600, 800, 750, 880, 940, 880, 900, 770, 920, 890, 976, 1100,
+              ],
+              pointBackgroundColor: "transparent",
+              pointHoverBackgroundColor: "#4A6CF7",
+              pointBorderColor: "transparent",
+              pointHoverBorderColor: "#fff",
+              pointHoverBorderWidth: 5,
+              pointBorderWidth: 5,
+              pointRadius: 8,
+              pointHoverRadius: 8,
+            },
+          ],
+        },
+
+        // Configuration options
+        defaultFontFamily: "Inter",
+        options: {
+          tooltips: {
+            callbacks: {
+              labelColor: function (tooltipItem, chart) {
+                return {
+                  backgroundColor: "#ffffff",
+                };
+              },
+            },
+            intersect: false,
+            backgroundColor: "#f9f9f9",
+            titleFontFamily: "Inter",
+            titleFontColor: "#8F92A1",
+            titleFontColor: "#8F92A1",
+            titleFontSize: 12,
+            bodyFontFamily: "Inter",
+            bodyFontColor: "#171717",
+            bodyFontStyle: "bold",
+            bodyFontSize: 16,
+            multiKeyBackground: "transparent",
+            displayColors: false,
+            xPadding: 30,
+            yPadding: 10,
+            bodyAlign: "center",
+            titleAlign: "center",
+          },
+
+          title: {
+            display: false,
+          },
+          legend: {
+            display: false,
+          },
+
+          scales: {
+            yAxes: [
+              {
+                gridLines: {
+                  display: false,
+                  drawTicks: false,
+                  drawBorder: false,
+                },
+                ticks: {
+                  padding: 35,
+                  max: 1200,
+                  min: 500,
+                },
+              },
+            ],
+            xAxes: [
+              {
+                gridLines: {
+                  drawBorder: false,
+                  color: "rgba(143, 146, 161, .1)",
+                  zeroLineColor: "rgba(143, 146, 161, .1)",
+                },
+                ticks: {
+                  padding: 20,
+                },
+              },
+            ],
+          },
+        },
+      });
+
+      // =========== chart one end
+
+      // =========== chart two start
+      const ctx2 = document.getElementById("Chart2").getContext("2d");
+      const chart2 = new Chart(ctx2, {
+        // The type of chart we want to create
+        type: "bar", // also try bar or other graph types
+        // The data for our dataset
+        data: {
+          labels: [
+            "Jan",
+            "Fab",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          // Information about the dataset
+          datasets: [
+            {
+              label: "",
+              backgroundColor: "#4A6CF7",
+              barThickness: 6,
+              maxBarThickness: 8,
+              data: [
+                600, 700, 1000, 700, 650, 800, 690, 740, 720, 1120, 876, 900,
+              ],
+            },
+          ],
+        },
+        // Configuration options
+        options: {
+          borderColor: "#F3F6F8",
+          borderWidth: 15,
+          backgroundColor: "#F3F6F8",
+          tooltips: {
+            callbacks: {
+              labelColor: function (tooltipItem, chart) {
+                return {
+                  backgroundColor: "rgba(104, 110, 255, .0)",
+                };
+              },
+            },
+            backgroundColor: "#F3F6F8",
+            titleFontColor: "#8F92A1",
+            titleFontSize: 12,
+            bodyFontColor: "#171717",
+            bodyFontStyle: "bold",
+            bodyFontSize: 16,
+            multiKeyBackground: "transparent",
+            displayColors: false,
+            xPadding: 30,
+            yPadding: 10,
+            bodyAlign: "center",
+            titleAlign: "center",
+          },
+
+          title: {
+            display: false,
+          },
+          legend: {
+            display: false,
+          },
+
+          scales: {
+            yAxes: [
+              {
+                gridLines: {
+                  display: false,
+                  drawTicks: false,
+                  drawBorder: false,
+                },
+                ticks: {
+                  padding: 35,
+                  max: 1200,
+                  min: 0,
+                },
+              },
+            ],
+            xAxes: [
+              {
+                gridLines: {
+                  display: false,
+                  drawBorder: false,
+                  color: "rgba(143, 146, 161, .1)",
+                  zeroLineColor: "rgba(143, 146, 161, .1)",
+                },
+                ticks: {
+                  padding: 20,
+                },
+              },
+            ],
+          },
+        },
+      });
+      // =========== chart two end
+
+      // =========== chart three start
+      const ctx3 = document.getElementById("Chart3").getContext("2d");
+      const chart3 = new Chart(ctx3, {
+        // The type of chart we want to create
+        type: "line", // also try bar or other graph types
+
+        // The data for our dataset
+        data: {
+          labels: [
+            "Jan",
+            "Fab",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          // Information about the dataset
+          datasets: [
+            {
+              label: "Revenue",
+              backgroundColor: "transparent",
+              borderColor: "#4a6cf7",
+              data: [80, 120, 110, 100, 130, 150, 115, 145, 140, 130, 160, 210],
+              pointBackgroundColor: "transparent",
+              pointHoverBackgroundColor: "#4a6cf7",
+              pointBorderColor: "transparent",
+              pointHoverBorderColor: "#fff",
+              pointHoverBorderWidth: 3,
+              pointBorderWidth: 5,
+              pointRadius: 5,
+              pointHoverRadius: 8,
+            },
+            {
+              label: "Profit",
+              backgroundColor: "transparent",
+              borderColor: "#9b51e0",
+              data: [
+                120, 160, 150, 140, 165, 210, 135, 155, 170, 140, 130, 200,
+              ],
+              pointBackgroundColor: "transparent",
+              pointHoverBackgroundColor: "#9b51e0",
+              pointBorderColor: "transparent",
+              pointHoverBorderColor: "#fff",
+              pointHoverBorderWidth: 3,
+              pointBorderWidth: 5,
+              pointRadius: 5,
+              pointHoverRadius: 8,
+            },
+            {
+              label: "Order",
+              backgroundColor: "transparent",
+              borderColor: "#f2994a",
+              data: [180, 110, 140, 135, 100, 90, 145, 115, 100, 110, 115, 150],
+              pointBackgroundColor: "transparent",
+              pointHoverBackgroundColor: "#f2994a",
+              pointBorderColor: "transparent",
+              pointHoverBorderColor: "#fff",
+              pointHoverBorderWidth: 3,
+              pointBorderWidth: 5,
+              pointRadius: 5,
+              pointHoverRadius: 8,
+            },
+          ],
+        },
+
+        // Configuration options
+        options: {
+          tooltips: {
+            intersect: false,
+            backgroundColor: "#fbfbfb",
+            titleFontColor: "#8F92A1",
+            titleFontSize: 16,
+            titleFontFamily: "Inter",
+            titleFontStyle: "400",
+            bodyFontFamily: "Inter",
+            bodyFontColor: "#171717",
+            bodyFontSize: 16,
+            multiKeyBackground: "transparent",
+            displayColors: false,
+            xPadding: 30,
+            yPadding: 15,
+            borderColor: "rgba(143, 146, 161, .1)",
+            borderWidth: 1,
+            title: false,
+          },
+
+          title: {
+            display: false,
+          },
+
+          layout: {
+            padding: {
+              top: 0,
+            },
+          },
+
+          legend: false,
+
+          scales: {
+            yAxes: [
+              {
+                gridLines: {
+                  display: false,
+                  drawTicks: false,
+                  drawBorder: false,
+                },
+                ticks: {
+                  padding: 35,
+                  max: 300,
+                  min: 50,
+                },
+              },
+            ],
+            xAxes: [
+              {
+                gridLines: {
+                  drawBorder: false,
+                  color: "rgba(143, 146, 161, .1)",
+                  zeroLineColor: "rgba(143, 146, 161, .1)",
+                },
+                ticks: {
+                  padding: 20,
+                },
+              },
+            ],
+          },
+        },
+      });
+      // =========== chart three end
+
+      // ================== chart four start
+      const ctx4 = document.getElementById("Chart4").getContext("2d");
+      const chart4 = new Chart(ctx4, {
+        // The type of chart we want to create
+        type: "bar", // also try bar or other graph types
+        // The data for our dataset
+        data: {
+          labels: ["Jan", "Fab", "Mar", "Apr", "May", "Jun"],
+          // Information about the dataset
+          datasets: [
+            {
+              label: "",
+              backgroundColor: "#4A6CF7",
+              barThickness: "flex",
+              maxBarThickness: 8,
+              data: [600, 700, 1000, 700, 650, 800],
+            },
+            {
+              label: "",
+              backgroundColor: "#d50100",
+              barThickness: "flex",
+              maxBarThickness: 8,
+              data: [690, 740, 720, 1120, 876, 900],
+            },
+          ],
+        },
+        // Configuration options
+        options: {
+          borderColor: "#F3F6F8",
+          borderWidth: 15,
+          backgroundColor: "#F3F6F8",
+          tooltips: {
+            callbacks: {
+              labelColor: function (tooltipItem, chart) {
+                return {
+                  backgroundColor: "rgba(104, 110, 255, .0)",
+                };
+              },
+            },
+            backgroundColor: "#F3F6F8",
+            titleFontColor: "#8F92A1",
+            titleFontSize: 12,
+            bodyFontColor: "#171717",
+            bodyFontStyle: "bold",
+            bodyFontSize: 16,
+            multiKeyBackground: "transparent",
+            displayColors: false,
+            xPadding: 30,
+            yPadding: 10,
+            bodyAlign: "center",
+            titleAlign: "center",
+          },
+
+          title: {
+            display: false,
+          },
+          legend: {
+            display: false,
+          },
+
+          scales: {
+            yAxes: [
+              {
+                gridLines: {
+                  display: false,
+                  drawTicks: false,
+                  drawBorder: false,
+                },
+                ticks: {
+                  padding: 35,
+                  max: 1200,
+                  min: 0,
+                },
+              },
+            ],
+            xAxes: [
+              {
+                gridLines: {
+                  display: false,
+                  drawBorder: false,
+                  color: "rgba(143, 146, 161, .1)",
+                  zeroLineColor: "rgba(143, 146, 161, .1)",
+                },
+                ticks: {
+                  padding: 20,
+                },
+              },
+            ],
+          },
+        },
+      });
+      // =========== chart four end
+    </script>
+  </body>
 </html>
