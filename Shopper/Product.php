@@ -32,45 +32,62 @@
           <li class="nav-item">
             <a href="index.php">
               <span class="icon">
-              <i class="lni lni-home"></i>
+               <i class="lni lni-home"></i>
               </span>
               <span class="text">Dashboard</span>
             </a>
           </li>
 
-          <li class="nav-item active" style="background-color: #FF9C00;">
-            <a href="complaint.php">
-              <span class="icon">
-              <i class="lni lni-add-files"></i>
-              </span>
-              <span class="text">Complaint</span>
+          <li class="nav-item active" style="background-color: #F2EEEA;">
+            <a href="Product.php">
+              <span class="icon" style="color: #FF9C00;">
+                <i class="lni lni-add-files"></i></span>
+              <span class="text" style="color: #FF9C00;">Product</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="Accounts.php">
+            <a href="Orders.php">
               <span class="icon">
-              <i class="lni lni-users"></i>
+                <i class="lni lni-users"></i>
               </span>
-              <span class="text">Accounts</span>
+              <span class="text">Orders</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="products.php">
+            <a href="Customers.php">
               <span class="icon">
-              <i class="lni lni-package"></i>
+                <i class="lni lni-package"></i>
               </span>
-              <span class="text">Products</span>
+              <span class="text">Customers</span>
             </a>
           </li>
-          
 
+          <li class="nav-item">
+            <a href="CusChat.php">
+              <span class="icon">
+                <i class="lni lni-package"></i>
+              </span>
+              <span class="text">CusChat</span>
+            </a>
+          </li>
           
       <div class="promo-box">
-        <h5 style="color:#ffffff;">Profile</h5>
+        <h5 style="color:#000000; text-align: left;">Profile</h5>
+        <ul>
+          <li>
+            <a href="index.php">
+            <div class="image">
+              <img src="assets/images/profile/profile-image.png" alt=""/ style="width: 50px;">
+               <span class="status"></span>
+              </div>
+              <h6>John Doe</h6>
+              <p style = "color:#FF9C00;">Shopper</p>
+            </a>
+          </li>
+        </ul>
         <a
-          href="index.php"
           target="_blank"
           rel="nofollow"
           class="main-btn primary-btn btn-hover"
@@ -78,6 +95,8 @@
           Log out
         </a>
       </div>
+
+      
     </aside>
     <div class="overlay"></div>
 
@@ -90,16 +109,8 @@
           <div class="row">
             <div class="col-lg-5 col-md-5 col-6">
               <div class="header-left d-flex align-items-center">
-                <div class="menu-toggle-btn mr-20">
-                  <button
-                    id="menu-toggle"
-                    class="main-btn primary-btn btn-hover"
-                  >
-                    <i class="lni lni-chevron-left me-2"></i> Menu
-                  </button>
-                </div>
                 <div class="header-search d-none d-md-flex">
-                  <h3>Complaints & Reporting</h3>
+                  <h3>Products</h3>
                 </div>
               </div>
             </div>
@@ -108,27 +119,7 @@
                 
                 <!-- profile start -->
                 <div class="profile-box ml-15">
-                  <button
-                    class="dropdown-toggle bg-transparent border-0"
-                    type="button"
-                    id="profile"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <div class="profile-info">
-                      <div class="info">
-                        <div class="image">
-                          <img
-                            src="assets/images/profile/profile-image.png"
-                            alt=""
-                          />
-                          <span class="status"></span>
-                        </div>
-                        <h6>John Doe</h6>
-                      </div>
-                    </div>
-                    <i class="lni lni-chevron-down"></i>
-                  </button>
+                  <h6>12th January of 2023, 12:00 pm</h6>
 
               </div>
             </div>
@@ -136,23 +127,34 @@
         </div>
       </header>
       <!-- ========== header end ========== -->
-<br><br>
+<br>
      
           <!-- End Row -->
       <section class="section">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xl-12 col-lg-4 col-sm-6">
-            <div class="card-style mb-30">
-                <div
-                  class="
-                    title
-                    d-flex
-                    flex-wrap
-                    align-items-center
-                    justify-content-between
-                  "
-                >
+                </div>
+                <div class="card-style mb-30">
+                  <div
+                    class="
+                      title
+                      d-flex
+                      flex-wrap
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                  <div class="left">
+                    <h6 class="text-medium mb-30"></h6>
+                  </div>
+                  <div class="right">
+
+                    <a href="#0" class="main-btn primary-btn btn-hover btn-sm">
+                    <i class="lni lni-plus mr-5"></i>Add New Product</a>
+
+                    <!-- end select -->
+                  </div>
                 </div>
                 <!-- End Title -->
                 <div class="table-responsive">
@@ -160,26 +162,36 @@
                     <thead>
                       <tr>
                         <th>
-                          <h6 class="text-sm text-medium">Complaint ID</h6>
+                          <h6 class="text-sm text-medium">Product ID</h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                          Subject
+                          Product Name
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                          Sent Date
+                          Category
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                          Kind of
+                          Quantity
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            
+                          Per.Price
+                          </h6>
+                        </th>
+                        <th class="min-width">
+                          <h6 class="text-sm text-medium">
+                          Status
+                          </h6>
+                        </th>
+                        <th class="min-width">
+                          <h6 class="text-sm text-medium">
+                          
                           </h6>
                         </th>
                       </tr>
@@ -188,17 +200,23 @@
                       <tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#4565465#23121213561246546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
-                          <p class="text-sm">This shop is fake</p>
+                          <p class="text-sm">Adidas slippers</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/12/23</p>
+                          <p class="text-sm">Men’s Cloth</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shop</p>
+                        <p class="text-sm">20/11</p>
+                        </td>
+                        <td>
+                        <p class="text-sm">Rs.100,000.00</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -214,10 +232,10 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
+                                <a href="#0" class="text-gray">Edit</a>
                               </li>
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">Feedbacks</a>
                               </li>
                             </ul>
                           </div>
@@ -226,17 +244,23 @@
                       <tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#4565465#23121213561246546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
-                          <p class="text-sm">This shop is fake</p>
+                          <p class="text-sm">Adidas slippers</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/12/23</p>
+                          <p class="text-sm">Men’s Cloth</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shop</p>
+                        <p class="text-sm">20/11</p>
+                        </td>
+                        <td>
+                        <p class="text-sm">Rs.100,000.00</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -252,10 +276,10 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
+                                <a href="#0" class="text-gray">Edit</a>
                               </li>
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">Feedbacks</a>
                               </li>
                             </ul>
                           </div>
@@ -263,17 +287,23 @@
                       </tr><tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#4565465#23121213561246546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
-                          <p class="text-sm">This shop is fake</p>
+                          <p class="text-sm">Adidas slippers</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/12/23</p>
+                          <p class="text-sm">Men’s Cloth</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shop</p>
+                        <p class="text-sm">20/11</p>
+                        </td>
+                        <td>
+                        <p class="text-sm">Rs.100,000.00</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -289,10 +319,10 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
+                                <a href="#0" class="text-gray">Edit</a>
                               </li>
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">Feedbacks</a>
                               </li>
                             </ul>
                           </div>
@@ -300,17 +330,23 @@
                       </tr><tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#4565465#23121213561246546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
-                          <p class="text-sm">This shop is fake</p>
+                          <p class="text-sm">Adidas slippers</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/12/23</p>
+                          <p class="text-sm">Men’s Cloth</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shop</p>
+                        <p class="text-sm">20/11</p>
+                        </td>
+                        <td>
+                        <p class="text-sm">Rs.100,000.00</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -326,10 +362,53 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
+                                <a href="#0" class="text-gray">Edit</a>
                               </li>
                               <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Feedbacks</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr><tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">#231212135612</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm">Adidas slippers</p>
+                        </td>
+                        <td>
+                          <p class="text-sm">Men’s Cloth</p>
+                        </td>
+                        <td>
+                        <p class="text-sm">20/11</p>
+                        </td>
+                        <td>
+                        <p class="text-sm">Rs.100,000.00</p>
+                        </td>
+                        <td>
+                          <span class="status-btn close-btn">Pending</span>
+                        </td>
+                        <td>
+                            <button
+                              class="more-btn ml-10 dropdown-toggle"
+                              id="moreAction1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="lni lni-more-alt"></i>
+                            </button>
+                            <ul
+                              class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="moreAction1"
+                            >
+                              <li class="dropdown-item">
                                 <a href="#0" class="text-gray">Edit</a>
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#0" class="text-gray">Feedbacks</a>
                               </li>
                             </ul>
                           </div>
