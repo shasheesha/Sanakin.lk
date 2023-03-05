@@ -41,7 +41,7 @@
           <li class="nav-item active" style="background-color: #F2EEEA;">
             <a href="Product.php">
               <span class="icon" style="color: #FF9C00;">
-                <i class="lni lni-add-files"></i></span>
+                <i class="lni lni-package"></i></span>
               <span class="text" style="color: #FF9C00;">Product</span>
             </a>
           </li>
@@ -49,7 +49,7 @@
           <li class="nav-item">
             <a href="Orders.php">
               <span class="icon">
-                <i class="lni lni-users"></i>
+                <i class="lni lni-add-files"></i>
               </span>
               <span class="text">Orders</span>
             </a>
@@ -58,7 +58,7 @@
           <li class="nav-item">
             <a href="Customers.php">
               <span class="icon">
-                <i class="lni lni-package"></i>
+                <i class="lni lni-users"></i>
               </span>
               <span class="text">Customers</span>
             </a>
@@ -127,7 +127,6 @@
         </div>
       </header>
       <!-- ========== header end ========== -->
-<br>
      
           <!-- End Row -->
       <section class="section">

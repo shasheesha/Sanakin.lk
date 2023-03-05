@@ -42,7 +42,7 @@
           <li class="nav-item">
             <a href="Product.php">
               <span class="icon">
-                <i class="lni lni-add-files"></i></span>
+                <i class="lni lni-package"></i></span>
               <span class="text">Product</span>
             </a>
           </li>
@@ -50,7 +50,7 @@
           <li class="nav-item">
             <a href="Orders.php">
               <span class="icon">
-                <i class="lni lni-users"></i>
+                <i class="lni lni-add-files"></i>
               </span>
               <span class="text">Orders</span>
             </a>
@@ -59,7 +59,7 @@
           <li class="nav-item">
             <a href="Customers.php">
               <span class="icon">
-                <i class="lni lni-package"></i>
+                <i class="lni lni-users"></i>
               </span>
               <span class="text">Customers</span>
             </a>
