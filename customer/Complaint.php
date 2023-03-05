@@ -29,16 +29,16 @@
       </div>
       <nav class="sidebar-nav" style="margin-top: 60px;">
         <ul>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="index.php">
               <span class="icon">
               <i class="lni lni-home"></i>
               </span>
-              <span class="text">Dashboard</span>
+              <span class="text">My Orders</span>
             </a>
           </li>
 
-          <li class="nav-item" style="background-color: #FF9C00;">
+          <li class="nav-item active" style="background-color: #FF9C00;">
             <a href="complaint.php">
               <span class="icon">
               <i class="lni lni-add-files"></i>
@@ -48,23 +48,13 @@
           </li>
 
           <li class="nav-item">
-            <a href="Accounts.php">
+            <a href="CusChat.php">
               <span class="icon">
               <i class="lni lni-users"></i>
               </span>
-              <span class="text">Accounts</span>
+              <span class="text">CusChat</span>
             </a>
           </li>
-
-          <li class="nav-item">
-            <a href="products.php">
-              <span class="icon">
-              <i class="lni lni-package"></i>
-              </span>
-              <span class="text">Products</span>
-            </a>
-          </li>
-          
 
           
       <div class="promo-box">
@@ -80,8 +70,6 @@
       </div>
     </aside>
     <div class="overlay"></div>
-
-
 
     <main class="main-wrapper">
       <!-- ========== header  ========== -->

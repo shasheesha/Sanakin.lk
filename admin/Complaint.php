@@ -29,7 +29,7 @@
       </div>
       <nav class="sidebar-nav" style="margin-top: 60px;">
         <ul>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="index.php">
               <span class="icon">
               <i class="lni lni-home"></i>
@@ -38,7 +38,7 @@
             </a>
           </li>
 
-          <li class="nav-item" style="background-color: #FF9C00;">
+          <li class="nav-item active" style="background-color: #FF9C00;">
             <a href="complaint.php">
               <span class="icon">
               <i class="lni lni-add-files"></i>
