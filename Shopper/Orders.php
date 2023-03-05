@@ -32,45 +32,62 @@
           <li class="nav-item">
             <a href="index.php">
               <span class="icon">
-              <i class="lni lni-home"></i>
+               <i class="lni lni-home"></i>
               </span>
               <span class="text">Dashboard</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="complaint.php">
+            <a href="Product.php">
               <span class="icon">
-              <i class="lni lni-add-files"></i>
-              </span>
-              <span class="text">Complaint</span>
+                <i class="lni lni-add-files"></i></span>
+              <span class="text">Product</span>
             </a>
           </li>
 
-          <li class="nav-item active" style="background-color: #FF9C00;">
-            <a href="Accounts.php">
-              <span class="icon">
-              <i class="lni lni-users"></i>
+          <li class="nav-item active" style="background-color: #F2EEEA;">
+            <a href="Orders.php">
+              <span class="icon" style="color: #FF9C00;">
+                <i class="lni lni-users"></i>
               </span>
-              <span class="text">Accounts</span>
+              <span class="text" style="color: #FF9C00;">Orders</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="products.php">
+            <a href="Customers.php">
               <span class="icon">
-              <i class="lni lni-package"></i>
+                <i class="lni lni-package"></i>
               </span>
-              <span class="text">Products</span>
+              <span class="text">Customers</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="CusChat.php">
+              <span class="icon">
+                <i class="lni lni-package"></i>
+              </span>
+              <span class="text">CusChat</span>
             </a>
           </li>
           
-
-          
       <div class="promo-box">
-        <h5 style="color:#ffffff;">Profile</h5>
+        <h5 style="color:#000000; text-align: left;">Profile</h5>
+        <ul>
+          <li>
+            <a href="index.php">
+            <div class="image">
+              <img src="assets/images/profile/profile-image.png" alt=""/ style="width: 50px;">
+               <span class="status"></span>
+              </div>
+              <h6>John Doe</h6>
+              <p style = "color:#FF9C00;">Shopper</p>
+            </a>
+          </li>
+        </ul>
         <a
-          href="index.php"
           target="_blank"
           rel="nofollow"
           class="main-btn primary-btn btn-hover"
@@ -78,6 +95,8 @@
           Log out
         </a>
       </div>
+
+      
     </aside>
     <div class="overlay"></div>
 
@@ -90,16 +109,8 @@
           <div class="row">
             <div class="col-lg-5 col-md-5 col-6">
               <div class="header-left d-flex align-items-center">
-                <div class="menu-toggle-btn mr-20">
-                  <button
-                    id="menu-toggle"
-                    class="main-btn primary-btn btn-hover"
-                  >
-                    <i class="lni lni-chevron-left me-2"></i> Menu
-                  </button>
-                </div>
                 <div class="header-search d-none d-md-flex">
-                  <h3>All Accounts</h3>
+                  <h3>Orders</h3>
                 </div>
               </div>
             </div>
@@ -108,27 +119,7 @@
                 
                 <!-- profile start -->
                 <div class="profile-box ml-15">
-                  <button
-                    class="dropdown-toggle bg-transparent border-0"
-                    type="button"
-                    id="profile"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <div class="profile-info">
-                      <div class="info">
-                        <div class="image">
-                          <img
-                            src="assets/images/profile/profile-image.png"
-                            alt=""
-                          />
-                          <span class="status"></span>
-                        </div>
-                        <h6>John Doe</h6>
-                      </div>
-                    </div>
-                    <i class="lni lni-chevron-down"></i>
-                  </button>
+                  <h6>12th January of 2023, 12:00 pm</h6>
 
               </div>
             </div>
@@ -136,24 +127,39 @@
         </div>
       </header>
       <!-- ========== header end ========== -->
-<br><br>
-  
-  
+<br>
+     
           <!-- End Row -->
       <section class="section">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xl-12 col-lg-4 col-sm-6">
-            <div class="card-style mb-30">
-                <div
-                  class="
-                    title
-                    d-flex
-                    flex-wrap
-                    align-items-center
-                    justify-content-between
-                  "
-                >
+                </div>
+                <div class="card-style mb-30">
+                  <div
+                    class="
+                      title
+                      d-flex
+                      flex-wrap
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                  <div class="left">
+                    <h6 class="text-medium mb-30"></h6>
+                  </div>
+                  <div class="right">
+                    <div class="select-style-1">
+                      <div class="select-position select-sm">
+                        <select class="light-bg">
+                          <option value="">Today</option>
+                          <option value="">Yesterday</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- end select -->
+                  </div>
                 </div>
                 <!-- End Title -->
                 <div class="table-responsive">
@@ -161,31 +167,31 @@
                     <thead>
                       <tr>
                         <th>
-                          <h6 class="text-sm text-medium">New Accounts</h6>
+                          <h6 class="text-sm text-medium">Order ID</h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            Customer Name
+                          Customer Name
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            Registered date
+                          Ordered Date
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            AC. Verification
+                          Amount
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            Type
+                          Status
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                              
+                          
                           </h6>
                         </th>
                       </tr>
@@ -194,20 +200,20 @@
                       <tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#456546546546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
                           <p class="text-sm">Ahinsa De Silva</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/11/22</p>
+                        <p class="text-sm">12/12/23</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                          <span class="status-btn close-btn">Lose</span>
                         </td>
                         <td>
                             <button
@@ -223,10 +229,7 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">View</a>
                               </li>
                             </ul>
                           </div>
@@ -235,20 +238,20 @@
                       <tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#456546546546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
                           <p class="text-sm">Ahinsa De Silva</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/11/22</p>
+                        <p class="text-sm">12/12/23</p>
                         </td>
                         <td>
-                          <span class="status-btn  success-btn">Completed</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                          <span class="status-btn close-btn">Lose</span>
                         </td>
                         <td>
                             <button
@@ -264,10 +267,7 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">View</a>
                               </li>
                             </ul>
                           </div>
@@ -275,20 +275,20 @@
                       </tr><tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#456546546546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
                           <p class="text-sm">Ahinsa De Silva</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/11/22</p>
+                        <p class="text-sm">12/12/23</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                          <span class="status-btn close-btn">Lose</span>
                         </td>
                         <td>
                             <button
@@ -304,10 +304,7 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">View</a>
                               </li>
                             </ul>
                           </div>
@@ -315,20 +312,20 @@
                       </tr><tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#456546546546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
                           <p class="text-sm">Ahinsa De Silva</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/11/22</p>
+                        <p class="text-sm">12/12/23</p>
                         </td>
                         <td>
-                          <span class="status-btn  success-btn">Completed</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                          <span class="status-btn close-btn">Lose</span>
                         </td>
                         <td>
                             <button
@@ -344,10 +341,7 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">View</a>
                               </li>
                             </ul>
                           </div>
@@ -355,20 +349,20 @@
                       </tr><tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#456546546546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
                           <p class="text-sm">Ahinsa De Silva</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/11/22</p>
+                        <p class="text-sm">12/12/23</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                          <span class="status-btn close-btn">Lose</span>
                         </td>
                         <td>
                             <button
@@ -384,10 +378,7 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">View</a>
                               </li>
                             </ul>
                           </div>
@@ -395,20 +386,20 @@
                       </tr><tr>
                         <td>
                           <div class="product">
-                            <p class="text-sm">#456546546546</p>
+                            <p class="text-sm">#231212135612</p>
                           </div>
                         </td>
                         <td>
                           <p class="text-sm">Ahinsa De Silva</p>
                         </td>
                         <td>
-                          <p class="text-sm">12/11/22</p>
+                        <p class="text-sm">12/12/23</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                          <span class="status-btn close-btn">Lose</span>
                         </td>
                         <td>
                             <button
@@ -424,95 +415,13 @@
                               aria-labelledby="moreAction1"
                             >
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr><tr>
-                        <td>
-                          <div class="product">
-                            <p class="text-sm">#456546546546</p>
-                          </div>
-                        </td>
-                        <td>
-                          <p class="text-sm">Ahinsa De Silva</p>
-                        </td>
-                        <td>
-                          <p class="text-sm">12/11/22</p>
-                        </td>
-                        <td>
-                          <span class="status-btn close-btn">Pending</span>
-                        </td>
-                        <td>
-                        <p class="text-sm">Shopper</p>
-                        </td>
-                        <td>
-                            <button
-                              class="more-btn ml-10 dropdown-toggle"
-                              id="moreAction1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="lni lni-more-alt"></i>
-                            </button>
-                            <ul
-                              class="dropdown-menu dropdown-menu-end"
-                              aria-labelledby="moreAction1"
-                            >
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr><tr>
-                        <td>
-                          <div class="product">
-                            <p class="text-sm">#456546546546</p>
-                          </div>
-                        </td>
-                        <td>
-                          <p class="text-sm">Ahinsa De Silva</p>
-                        </td>
-                        <td>
-                          <p class="text-sm">12/11/22</p>
-                        </td>
-                        <td>
-                          <span class="status-btn close-btn">Pending</span>
-                        </td>
-                        <td>
-                        <p class="text-sm">Shopper</p>
-                        </td>
-                        <td>
-                            <button
-                              class="more-btn ml-10 dropdown-toggle"
-                              id="moreAction1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="lni lni-more-alt"></i>
-                            </button>
-                            <ul
-                              class="dropdown-menu dropdown-menu-end"
-                              aria-labelledby="moreAction1"
-                            >
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a href="#0" class="text-gray">View</a>
                               </li>
                             </ul>
                           </div>
                         </td>
                       </tr>
+                     
                     </tbody>
                   </table>
                   <!-- End Table -->
@@ -540,6 +449,6 @@
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
 
-    
+
   </body>
 </html>
