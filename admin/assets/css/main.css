@@ -23,6 +23,7 @@ body {
   box-sizing: border-box;
 }
 
+
 a:focus,
 input:focus,
 textarea:focus,
@@ -2836,6 +2837,7 @@ h6,
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon {
   margin-right: 12px;
   font-size: 18px;
+  color: #ffffff;
 }
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon svg {
   fill: currentColor;
@@ -4890,3 +4892,8 @@ h6,
 .fw-900 {
   font-weight: 900;
 }
+
+
+
+
+
