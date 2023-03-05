@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/fullcalendar.css" />
     <link rel="stylesheet" href="assets/css/fullcalendar.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/css-circular-prog-bar.css" />
   </head>
   <body>
     <!-- ======== sidebar-nav start =========== -->
@@ -29,12 +30,12 @@
       </div>
       <nav class="sidebar-nav" style="margin-top: 60px;">
         <ul>
-          <li class="nav-item active" style="background-color: #FF9C00;">
+          <li class="nav-item active" style="background-color: #F2EEEA;">
             <a href="index.php">
-              <span class="icon">
+              <span class="icon" style="color: #FF9C00;">
                <i class="lni lni-home"></i>
               </span>
-              <span class="text">Dashboard</span>
+              <span class="text" style="color: #FF9C00;">Dashboard</span>
             </a>
           </li>
 
@@ -65,16 +66,29 @@
           </li>
           
       <div class="promo-box">
-        <h5 style="color:#ffffff;">Profile</h5>
+        <h5 style="color:#000000; text-align: left;">Profile</h5>
+        <ul>
+          <li>
+            <a href="index.php">
+            <div class="image">
+              <img src="assets/images/profile/profile-image.png" alt=""/ style="width: 50px;">
+               <span class="status"></span>
+              </div>
+              <h6>John Doe</h6>
+              <p style = "color:#FF9C00;">Shopper</p>
+            </a>
+          </li>
+        </ul>
         <a
           target="_blank"
           rel="nofollow"
           class="main-btn primary-btn btn-hover"
-          onclick="myFunction()"
         >
           Log out
         </a>
       </div>
+
+      
     </aside>
     <div class="overlay"></div>
 
@@ -87,14 +101,6 @@
           <div class="row">
             <div class="col-lg-5 col-md-5 col-6">
               <div class="header-left d-flex align-items-center">
-                <div class="menu-toggle-btn mr-20">
-                  <button
-                    id="menu-toggle"
-                    class="main-btn primary-btn btn-hover"
-                  >
-                    <i class="lni lni-chevron-left me-2"></i> Menu
-                  </button>
-                </div>
                 <div class="header-search d-none d-md-flex">
                   <h3>Dashboard</h3>
                 </div>
@@ -105,27 +111,7 @@
                 
                 <!-- profile start -->
                 <div class="profile-box ml-15">
-                  <button
-                    class="dropdown-toggle bg-transparent border-0"
-                    type="button"
-                    id="profile"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <div class="profile-info">
-                      <div class="info">
-                        <div class="image">
-                          <img
-                            src="assets/images/profile/profile-image.png"
-                            alt=""
-                          />
-                          <span class="status"></span>
-                        </div>
-                        <h6>John Doe</h6>
-                      </div>
-                    </div>
-                    <i class="lni lni-chevron-down"></i>
-                  </button>
+                  <h6>12th January of 2023, 12:00 pm</h6>
 
               </div>
             </div>
@@ -138,51 +124,158 @@
       <section class="section">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xl-4 col-lg-4 col-sm-6">
-              <div class="icon-card mb-30">
-                <div class="content">
-                  <h3 class="mb-10">34567</h3>
-                  <h6 class="text-sm text-medium">Total Shoppers</h6>
+            <div class= col-xl-8>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="icon-card mb-30">
+                    <div class="content">
+                      <h3 class="mb-10" style="color: #FF9C00">34567</h3>
+                      <h6 class="text-sm text-medium" style="color: #FF9C00">Total Shoppers</h6>
+                    </div>
+                    <div class="icon purple" style="margin-left: 130px; color: #FF9C00">
+                      <i class="lni lni-cart-full"></i>
+                    </div>
+                  </div>
+                  <!-- End Icon Cart -->
                 </div>
-                <div class="icon purple" style="margin-left: 100px;">
-                  <i class="lni lni-cart-full"></i>
+                <!-- End Col -->
+                <div class="col-xl-6">
+                  <div class="icon-card mb-30">
+                    <div class="content">
+                      <h3 class="mb-10" style="color: #FF9C00">1200</h3>
+                      <h6 class="text-sm text-medium" style="color: #FF9C00">Total Customers</h6>
+                    </div>
+                    <div class="icon success" style="margin-left: 130px; color: #FF9C00">
+                      <i class="lni lni-dollar"></i>
+                    </div>
+                  </div>
+                  <!-- End Icon Cart -->
+                </div>
+                <div class="col-xl-6">
+                  <div class="icon-card mb-30">
+                    <div class="content">
+                      <h3 class="mb-10" style="color: #FF9C00">34567</h3>
+                      <h6 class="text-sm text-medium" style="color: #FF9C00">Total Shoppers</h6>
+                    </div>
+                    <div class="icon purple" style="margin-left: 130px; color: #FF9C00">
+                      <i class="lni lni-cart-full"></i>
+                    </div>
+                  </div>
+                  <!-- End Icon Cart -->
+                </div>
+
+                <div class="col-xl-6">
+                  <div class="icon-card mb-30">
+                    <div class="content">
+                      <h3 class="mb-10" style="color: #FF9C00">34567</h3>
+                      <h6 class="text-sm text-medium" style="color: #FF9C00">Total Shoppers</h6>
+                    </div>
+                    <div class="icon purple" style="margin-left: 130px; color: #FF9C00">
+                      <i class="lni lni-cart-full"></i>
+                    </div>
+                  </div>
+                  <!-- End Icon Cart -->
+                </div>
+                <div class="col-xl-6">
+                  <div class="icon-card2 mb-30" style="margin-top:20px">
+                    <div class="content">
+                      <h3 class="mb-10" style="color: #000000; font-size:20px;">Add new Product</h3>
+                      <h6 class="text-sm text-medium" style="color: #000000; font-size:12px;">introduce your new product to the market.</h6>
+                    </div>
+                    <div class="icon purple" style="    margin-left: 240px; color: #000000;">
+                      <i class="lni lni-cart-full"></i>
+                    </div>
+                  </div>
+                  
+                  <!-- End Icon Cart -->
+                </div>
+
+                <div class="col-xl-6">
+                  <div class="icon-card2 mb-30" style="margin-top:20px">
+                    <div class="content">
+                      <h3 class="mb-10" style="color: #000000; font-size:20px;">Increase Items</h3>
+                      <h6 class="text-sm text-medium" style="color: #000000; font-size:12px;">increase the product ha.</h6>
+                    </div>
+                    <div class="icon purple" style="    margin-left: 240px; color: #000000;">
+                      <i class="lni lni-plus"></i>
+                    </div>
+                  </div>
+                  
+                  <!-- End Icon Cart -->
                 </div>
               </div>
-              <!-- End Icon Cart -->
             </div>
-            <!-- End Col -->
-            <div class="col-xl-4 col-lg-4 col-sm-6">
-              <div class="icon-card mb-30">
-                <div class="content">
-                  <h3 class="mb-10">1200</h3>
-                  <h6 class="text-sm text-medium">Total Customers</h6>
+              <!-- End Col -->
+              <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="icon-card3 mb-30">
+                <h3>Stock Summery</h3>
+                <div class="progress-circle over50 p100">
+                  <span>100%</span>
+                  <div class="left-half-clipper">
+                      <div class="first50-bar"></div>
+                      <div class="value-bar"></div>
+                  </div>
                 </div>
-                <div class="icon success" style="margin-left: 100px;">
-                  <i class="lni lni-dollar"></i>
+                <div class="table-responsive">
+                  <table class="table top-selling-table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <h6 class="text-sm text-medium">PLow stock Products</h6>
+                        </th>
+                        <th class="min-width">
+                          <h6 class="text-sm text-medium">
+                          
+                          </h6>
+                        </th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">Product name</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm" style="color:#DD3A3A;">Remaining 10%</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">Product name</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm" style="color:#DD3A3A;">Remaining 10%</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="product">
+                            <p class="text-sm">Product name</p>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-sm" style="color:#DD3A3A;">Remaining 10%</p>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  <!-- End Table -->
                 </div>
+                <!-- End Icon Cart -->
               </div>
-              <!-- End Icon Cart -->
-            </div>
-            <!-- End Col -->
-            <div class="col-xl-4 col-lg-4 col-sm-6">
-              <div class="icon-card mb-30">
-                <div class="content">
-                  <h3 class="mb-10">120</h3>
-                  <h6 class="text-sm text-medium">Today Total Orders</h6>
-                </div>
-                <div class="icon primary" style="margin-left: 100px;">
-                  <i class="lni lni-credit-cards"></i>
-                </div>
               </div>
-              <!-- End Icon Cart -->
-            </div>
-            </div>
             <!-- End Col -->
           </div>
   
           <!-- End Row -->
       <section class="section">
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding-left: 10px; padding-right: 10px;">
           <div class="row">
             <div class="col-xl-12 col-lg-4 col-sm-6">
             <div class="card-style mb-30">
@@ -202,26 +295,26 @@
                     <thead>
                       <tr>
                         <th>
-                          <h6 class="text-sm text-medium">New Accounts</h6>
+                          <h6 class="text-sm text-medium">New Orders</h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            Customer Name
+                          Customer Name
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            Registered date
+                          Ordered Date
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            AC. Verification
+                          Amount
                           </h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">
-                            Type
+                          Status
                           </h6>
                         </th>
                         <th class="min-width">
@@ -245,10 +338,10 @@
                           <p class="text-sm">12/11/22</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                        <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -286,50 +379,10 @@
                           <p class="text-sm">12/11/22</p>
                         </td>
                         <td>
-                          <span class="status-btn  success-btn">Completed</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
-                        </td>
-                        <td>
-                            <button
-                              class="more-btn ml-10 dropdown-toggle"
-                              id="moreAction1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="lni lni-more-alt"></i>
-                            </button>
-                            <ul
-                              class="dropdown-menu dropdown-menu-end"
-                              aria-labelledby="moreAction1"
-                            >
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Remove</a>
-                              </li>
-                              <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr><tr>
-                        <td>
-                          <div class="product">
-                            <p class="text-sm">#456546546546</p>
-                          </div>
-                        </td>
-                        <td>
-                          <p class="text-sm">Ahinsa De Silva</p>
-                        </td>
-                        <td>
-                          <p class="text-sm">12/11/22</p>
-                        </td>
-                        <td>
-                          <span class="status-btn close-btn">Pending</span>
-                        </td>
-                        <td>
-                        <p class="text-sm">Shopper</p>
+                        <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -353,7 +406,7 @@
                             </ul>
                           </div>
                         </td>
-                      </tr><tr>
+                      </tr> <tr>
                         <td>
                           <div class="product">
                             <p class="text-sm">#456546546546</p>
@@ -366,10 +419,10 @@
                           <p class="text-sm">12/11/22</p>
                         </td>
                         <td>
-                          <span class="status-btn  success-btn">Completed</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                        <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -393,7 +446,7 @@
                             </ul>
                           </div>
                         </td>
-                      </tr><tr>
+                      </tr> <tr>
                         <td>
                           <div class="product">
                             <p class="text-sm">#456546546546</p>
@@ -406,10 +459,10 @@
                           <p class="text-sm">12/11/22</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                        <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -433,7 +486,7 @@
                             </ul>
                           </div>
                         </td>
-                      </tr><tr>
+                      </tr> <tr>
                         <td>
                           <div class="product">
                             <p class="text-sm">#456546546546</p>
@@ -446,10 +499,10 @@
                           <p class="text-sm">12/11/22</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                        <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -473,7 +526,7 @@
                             </ul>
                           </div>
                         </td>
-                      </tr><tr>
+                      </tr> <tr>
                         <td>
                           <div class="product">
                             <p class="text-sm">#456546546546</p>
@@ -486,10 +539,10 @@
                           <p class="text-sm">12/11/22</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                        <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button
@@ -513,7 +566,7 @@
                             </ul>
                           </div>
                         </td>
-                      </tr><tr>
+                      </tr> <tr>
                         <td>
                           <div class="product">
                             <p class="text-sm">#456546546546</p>
@@ -526,10 +579,10 @@
                           <p class="text-sm">12/11/22</p>
                         </td>
                         <td>
-                          <span class="status-btn close-btn">Pending</span>
+                        <p class="text-sm">Rs.100,000.00</p>
                         </td>
                         <td>
-                        <p class="text-sm">Shopper</p>
+                        <span class="status-btn close-btn">Pending</span>
                         </td>
                         <td>
                             <button

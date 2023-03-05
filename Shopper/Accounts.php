@@ -29,10 +29,10 @@
       </div>
       <nav class="sidebar-nav" style="margin-top: 60px;">
         <ul>
-          <li class="nav-item active" style="background-color: #FF9C00;">
+          <li class="nav-item">
             <a href="index.php">
               <span class="icon">
-               <i class="lni lni-home"></i>
+              <i class="lni lni-home"></i>
               </span>
               <span class="text">Dashboard</span>
             </a>
@@ -41,15 +41,16 @@
           <li class="nav-item">
             <a href="complaint.php">
               <span class="icon">
-                <i class="lni lni-add-files"></i></span>
+              <i class="lni lni-add-files"></i>
+              </span>
               <span class="text">Complaint</span>
             </a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item active" style="background-color: #FF9C00;">
             <a href="Accounts.php">
               <span class="icon">
-                <i class="lni lni-users"></i>
+              <i class="lni lni-users"></i>
               </span>
               <span class="text">Accounts</span>
             </a>
@@ -58,19 +59,21 @@
           <li class="nav-item">
             <a href="products.php">
               <span class="icon">
-                <i class="lni lni-package"></i>
+              <i class="lni lni-package"></i>
               </span>
               <span class="text">Products</span>
             </a>
           </li>
           
+
+          
       <div class="promo-box">
         <h5 style="color:#ffffff;">Profile</h5>
         <a
+          href="index.php"
           target="_blank"
           rel="nofollow"
           class="main-btn primary-btn btn-hover"
-          onclick="myFunction()"
         >
           Log out
         </a>
@@ -96,7 +99,7 @@
                   </button>
                 </div>
                 <div class="header-search d-none d-md-flex">
-                  <h3>Dashboard</h3>
+                  <h3>All Accounts</h3>
                 </div>
               </div>
             </div>
@@ -134,51 +137,7 @@
       </header>
       <!-- ========== header end ========== -->
 <br><br>
-      <!-- ========== section start ========== -->
-      <section class="section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-4 col-lg-4 col-sm-6">
-              <div class="icon-card mb-30">
-                <div class="content">
-                  <h3 class="mb-10">34567</h3>
-                  <h6 class="text-sm text-medium">Total Shoppers</h6>
-                </div>
-                <div class="icon purple" style="margin-left: 100px;">
-                  <i class="lni lni-cart-full"></i>
-                </div>
-              </div>
-              <!-- End Icon Cart -->
-            </div>
-            <!-- End Col -->
-            <div class="col-xl-4 col-lg-4 col-sm-6">
-              <div class="icon-card mb-30">
-                <div class="content">
-                  <h3 class="mb-10">1200</h3>
-                  <h6 class="text-sm text-medium">Total Customers</h6>
-                </div>
-                <div class="icon success" style="margin-left: 100px;">
-                  <i class="lni lni-dollar"></i>
-                </div>
-              </div>
-              <!-- End Icon Cart -->
-            </div>
-            <!-- End Col -->
-            <div class="col-xl-4 col-lg-4 col-sm-6">
-              <div class="icon-card mb-30">
-                <div class="content">
-                  <h3 class="mb-10">120</h3>
-                  <h6 class="text-sm text-medium">Today Total Orders</h6>
-                </div>
-                <div class="icon primary" style="margin-left: 100px;">
-                  <i class="lni lni-credit-cards"></i>
-                </div>
-              </div>
-              <!-- End Icon Cart -->
-            </div>
-            </div>
-            <!-- End Col -->
-          </div>
+  
   
           <!-- End Row -->
       <section class="section">
@@ -565,8 +524,10 @@
         
         </div>
         <!-- end container -->
-
       </section>
+      <!-- ========== section end ========== -->
+
+    
     </main>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -579,7 +540,6 @@
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
 
+    
   </body>
-
-
 </html>
